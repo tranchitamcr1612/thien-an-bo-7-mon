@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thiên Ân Bò 7 Món – Authentic Vietnamese Restaurant in Rosemead, CA</title>
+  <meta name="description" content="Thiên Ân Bò 7 Món – Authentic Vietnamese 7 course of beef in Rosemead, CA. Dine-in, takeout, DoorDash & Grubhub. Call (626) 286-6665." />
+  <meta property="og:title" content="Thiên Ân Bò 7 Món – Rosemead, CA" />
+  <meta property="og:description" content="Experience authentic Saigon cuisine with 7 unique beef courses at Thiên Ân in Rosemead, CA." />
+  <meta property="og:image" content="img/bo-nuong-combo.jpeg" />
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:url" content="https://thienanbo7mon.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Thiên Ân Bò 7 Món",
+    "image": "img/bo-nuong-combo.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "8837 Valley Blvd",
+      "addressLocality": "Rosemead",
+      "addressRegion": "CA",
+      "postalCode": "91770",
+      "addressCountry": "US"
+    },
+    "telephone": "+16262866665",
+    "servesCuisine": "Vietnamese",
+    "priceRange": "$$",
+    "openingHours": ["Su 12:00-21:00","Mo 15:30-21:00","We 15:30-21:00","Th 15:30-21:00","Fr 12:00-21:00","Sa 12:00-21:00"],
+    "url": "https://www.yelp.com/biz/thien-an-bo-7-mon-rosemead-2"
+  }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --red:   #9B1C1C;
+      --gold:  #C8972A;
+      --cream: #FDF6EC;
+      --dark:  #1A1208;
+      --gray:  #6B6055;
+    }
+    body { font-family: 'Lato', sans-serif; background: var(--cream); color: var(--dark); }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 200;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 60px;
+      background: rgba(26,18,8,.94);
+      backdrop-filter: blur(6px);
+    }
+    .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--gold); letter-spacing: 1px; }
+    .nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
+    .nav-links a { color: #e8d9c0; text-decoration: none; font-size: .82rem; letter-spacing: 1.5px; text-transform: uppercase; transition: color .2s; }
+    .nav-links a:hover { color: var(--gold); }
+
+    /* Language switcher */
+    .lang-switcher { display: flex; gap: 6px; margin-left: 20px; }
+    .lang-btn {
+      background: transparent; border: 1px solid rgba(200,151,42,.4);
+      color: #c4b49e; font-size: .75rem; letter-spacing: 1px; padding: 4px 10px;
+      cursor: pointer; border-radius: 2px; font-family: 'Lato', sans-serif;
+      text-transform: uppercase; transition: all .2s;
+    }
+    .lang-btn:hover, .lang-btn.active { background: var(--gold); color: var(--dark); border-color: var(--gold); font-weight: 700; }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(to bottom, rgba(26,18,8,.55) 0%, rgba(26,18,8,.75) 100%),
+        url('img/bo-nuong-combo.jpeg') center/cover no-repeat;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 120px 24px 60px;
+    }
+    .hero-badge { display: inline-block; border: 1px solid var(--gold); color: var(--gold); font-size: .75rem; letter-spacing: 3px; text-transform: uppercase; padding: 6px 20px; margin-bottom: 28px; border-radius: 2px; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.6rem, 7vw, 5.5rem); color: #fff; line-height: 1.1; margin-bottom: 12px; }
+    .hero h1 span { color: var(--gold); }
+    .hero p { color: #d8c9b2; font-size: 1.1rem; max-width: 540px; line-height: 1.85; margin: 20px auto 40px; }
+    .btn { display: inline-block; padding: 14px 36px; background: var(--gold); color: var(--dark); text-decoration: none; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; font-size: .82rem; border-radius: 2px; transition: background .2s, transform .15s; cursor: pointer; border: none; font-family: 'Lato', sans-serif; }
+    .btn:hover { background: #e0a830; transform: translateY(-2px); }
+    .btn-outline { background: transparent; border: 2px solid var(--gold); color: var(--gold); margin-left: 14px; }
+    .btn-outline:hover { background: var(--gold); color: var(--dark); }
+
+    /* ── SECTIONS ── */
+    section { padding: 90px 24px; }
+    .section-label { font-size: .75rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
+    .section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.2; margin-bottom: 24px; }
+    .divider { width: 60px; height: 3px; background: var(--gold); margin: 0 auto 40px; }
+    .divider-left { margin: 0 0 40px; }
+
+    /* ── ABOUT ── */
+    .about { background: var(--dark); color: #e8d9c0; }
+    .about-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .about-img { width: 100%; height: 480px; object-fit: cover; border-radius: 4px; box-shadow: 0 24px 60px rgba(0,0,0,.5); }
+    .about .section-title { color: #fff; }
+    .about p { color: #c4b49e; line-height: 1.9; margin-bottom: 18px; font-size: 1.02rem; }
+
+    /* ── 7 COURSES ── */
+    .courses { background: var(--cream); text-align: center; }
+    .courses .section-title { color: var(--dark); }
+    .courses-grid { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 24px; }
+    .course-card { background: #fff; border-radius: 6px; padding: 28px 18px; box-shadow: 0 4px 24px rgba(0,0,0,.07); transition: transform .2s, box-shadow .2s; }
+    .course-card:hover { transform: translateY(-6px); box-shadow: 0 12px 36px rgba(0,0,0,.13); }
+    .course-num { font-family: 'Playfair Display', serif; font-size: 2.4rem; color: var(--gold); margin-bottom: 10px; }
+    .course-card h3 { font-size: .95rem; font-weight: 700; margin-bottom: 8px; }
+    .course-card p { font-size: .85rem; color: var(--gray); line-height: 1.6; }
+
+    /* ── HIGHLIGHTS ── */
+    .highlights { background: #1e140a; color: #e8d9c0; }
+    .highlights-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
+    .highlights .section-title { color: #fff; margin-bottom: 0; }
+    .highlights-grid { margin-top: 52px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px; }
+    .hl-card { border: 1px solid rgba(200,151,42,.3); border-radius: 6px; padding: 32px 22px; transition: border-color .2s; }
+    .hl-card:hover { border-color: var(--gold); }
+    .hl-icon { font-size: 2.2rem; margin-bottom: 14px; }
+    .hl-card h3 { color: var(--gold); font-size: .95rem; letter-spacing: 1px; margin-bottom: 10px; text-transform: uppercase; }
+    .hl-card p { color: #b0a090; font-size: .9rem; line-height: 1.75; }
+
+    /* ── GALLERY ── */
+    .gallery { background: var(--cream); padding: 90px 24px; }
+    .gallery h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem,4vw,2.8rem); text-align: center; margin-bottom: 14px; }
+    .gallery-grid { max-width: 1100px; margin: 50px auto 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .gallery-grid img { width: 100%; height: 230px; object-fit: cover; border-radius: 4px; filter: saturate(.85); transition: filter .3s, transform .3s; }
+    .gallery-grid img:hover { filter: saturate(1.15); transform: scale(1.02); }
+    .gallery-grid img:first-child { grid-column: span 2; height: 320px; }
+
+    /* ── INFO ── */
+    .info { background: var(--dark); color: #e8d9c0; }
+    .info-inner { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+    .info h2 { font-family: 'Playfair Display', serif; color: #fff; font-size: 1.8rem; margin-bottom: 28px; }
+    .hours-table { width: 100%; border-collapse: collapse; }
+    .hours-table td { padding: 10px 0; font-size: .92rem; border-bottom: 1px solid rgba(255,255,255,.07); }
+    .hours-table td:first-child { color: var(--gold); font-weight: 700; }
+    .hours-table td:last-child { text-align: right; color: #c4b49e; }
+    .closed { color: #666 !important; }
+    .info-detail { display: flex; gap: 14px; margin-bottom: 18px; align-items: flex-start; }
+    .info-detail .icon { font-size: 1.3rem; margin-top: 3px; }
+    .info-detail p { color: #c4b49e; line-height: 1.7; font-size: .93rem; }
+    .info-detail strong { color: #fff; display: block; margin-bottom: 2px; }
+
+    /* ── CTA ── */
+    .cta { background: linear-gradient(rgba(155,28,28,.88),rgba(155,28,28,.88)), url('img/ca-nuong.jpeg') center/cover; text-align: center; padding: 100px 24px; }
+    .cta h2 { font-family: 'Playfair Display', serif; color: #fff; font-size: clamp(2rem,5vw,3.2rem); margin-bottom: 20px; }
+    .cta p { color: #f5c4c4; font-size: 1.05rem; margin-bottom: 40px; max-width: 500px; margin-left: auto; margin-right: auto; line-height: 1.75; }
+
+    /* ── FOOTER ── */
+    footer { background: #0e0a04; color: #6B6055; text-align: center; padding: 36px 24px; font-size: .85rem; line-height: 2; }
+    footer a { color: var(--gold); text-decoration: none; }
+
+    /* ══════════════════════════════════════
+       MENU MODAL
+    ══════════════════════════════════════ */
+    .modal-overlay {
+      display: none; position: fixed; inset: 0; z-index: 500;
+      background: rgba(10,6,2,.85); backdrop-filter: blur(4px);
+      overflow-y: auto; padding: 40px 16px;
+    }
+    .modal-overlay.open { display: flex; align-items: flex-start; justify-content: center; }
+    .modal-box {
+      background: #1a1208; color: #e8d9c0; border-radius: 8px;
+      max-width: 960px; width: 100%; padding: 0; overflow: hidden;
+      box-shadow: 0 30px 80px rgba(0,0,0,.7);
+      animation: modalIn .3s ease;
+    }
+    @keyframes modalIn { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+    .modal-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 28px 36px; border-bottom: 1px solid rgba(200,151,42,.25);
+    }
+    .modal-header h2 { font-family: 'Playfair Display', serif; color: var(--gold); font-size: 1.7rem; }
+    .modal-close { background: none; border: none; color: #a08060; font-size: 1.8rem; cursor: pointer; line-height: 1; transition: color .2s; }
+    .modal-close:hover { color: #fff; }
+
+    /* Menu Tabs */
+    .menu-tabs { display: flex; border-bottom: 1px solid rgba(200,151,42,.2); overflow-x: auto; }
+    .menu-tab {
+      padding: 16px 28px; font-size: .8rem; letter-spacing: 1.5px;
+      text-transform: uppercase; color: #a08060; cursor: pointer;
+      white-space: nowrap; border-bottom: 2px solid transparent;
+      transition: all .2s; font-family: 'Lato', sans-serif; background: none; border-top: none; border-left: none; border-right: none;
+    }
+    .menu-tab:hover { color: var(--gold); }
+    .menu-tab.active { color: var(--gold); border-bottom-color: var(--gold); }
+
+    .menu-section { display: none; padding: 36px; }
+    .menu-section.active { display: block; }
+    .menu-section-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #fff; margin-bottom: 6px; }
+    .menu-section-sub { font-size: .88rem; color: #8a7868; margin-bottom: 28px; }
+
+    /* Menu items grid */
+    .menu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px; }
+    .menu-item {
+      background: #251a0e; border-radius: 6px; overflow: hidden;
+      border: 1px solid rgba(200,151,42,.12); transition: border-color .2s, transform .2s;
+    }
+    .menu-item:hover { border-color: rgba(200,151,42,.4); transform: translateY(-3px); }
+    .menu-item-img { width: 100%; height: 160px; object-fit: cover; display: block; }
+    .menu-item-body { padding: 16px; }
+    .menu-item-name { font-weight: 700; font-size: .95rem; color: #fff; margin-bottom: 4px; }
+    .menu-item-vn { font-size: .82rem; color: var(--gold); margin-bottom: 8px; font-style: italic; }
+    .menu-item-desc { font-size: .83rem; color: #9a8878; line-height: 1.6; margin-bottom: 12px; }
+    .menu-item-price { font-size: 1rem; font-weight: 700; color: var(--gold); }
+    .menu-item-price span { font-size: .78rem; font-weight: 400; color: #7a6a58; margin-left: 4px; }
+
+    /* Catfish special */
+    .catfish-card { background: #251a0e; border-radius: 8px; overflow: hidden; border: 1px solid rgba(200,151,42,.2); max-width: 700px; margin: 0 auto; }
+    .catfish-img { width: 100%; height: 300px; object-fit: cover; }
+    .catfish-body { padding: 28px; }
+    .catfish-body h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: #fff; margin-bottom: 6px; }
+    .catfish-body .sub { color: var(--gold); font-size: .88rem; margin-bottom: 16px; font-style: italic; }
+    .catfish-body p { color: #9a8878; font-size: .92rem; line-height: 1.75; margin-bottom: 24px; }
+    .size-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .size-row { background: #1a1208; border-radius: 4px; padding: 12px 16px; display: flex; justify-content: space-between; align-items: center; border: 1px solid rgba(200,151,42,.1); }
+    .size-label { font-size: .85rem; color: #c4b49e; }
+    .size-price { font-weight: 700; color: var(--gold); font-size: 1rem; }
+    .bestseller-badge { display: inline-block; background: var(--red); color: #fff; font-size: .7rem; letter-spacing: 1px; text-transform: uppercase; padding: 3px 10px; border-radius: 2px; margin-bottom: 16px; }
+
+    /* Bo 7 Mon special */
+    .bo7-intro { display: block; gap: 32px; align-items: start; margin-bottom: 32px; }
+    .bo7-intro img { width: 100%; height: 280px; object-fit: cover; border-radius: 6px; }
+    .bo7-intro-text h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #fff; margin-bottom: 12px; }
+    .bo7-intro-text p { color: #9a8878; font-size: .9rem; line-height: 1.75; margin-bottom: 10px; }
+    .bo7-courses { display: flex; flex-direction: column; gap: 0; border: 1px solid rgba(200,151,42,.15); border-radius: 8px; overflow: hidden; }
+    .bo7-course { background: #251a0e; padding: 16px 20px; border-bottom: 1px solid rgba(200,151,42,.1); display: flex; gap: 18px; align-items: flex-start; transition: background .2s; }
+    .bo7-course:last-child { border-bottom: none; }
+    .bo7-course:hover { background: #2e1f10; }
+    .bo7-course-num { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--gold); min-width: 32px; line-height: 1.3; }
+    .bo7-course-body { flex: 1; }
+    .bo7-course h4 { font-size: .95rem; color: #fff; margin-bottom: 3px; }
+    .bo7-course-sub { font-size: .8rem; color: var(--gold); opacity: .8; margin-bottom: 4px; font-style: italic; }
+    .bo7-course p { font-size: .82rem; color: #7a6a58; line-height: 1.55; }
+    .bo7-pricing { margin-top: 28px; background: #251a0e; border-radius: 8px; padding: 24px; border: 1px solid rgba(200,151,42,.2); }
+    .bo7-pricing h4 { color: var(--gold); font-size: .9rem; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 14px; }
+    .bo7-price-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,.06); font-size: .9rem; }
+    .bo7-price-row:last-child { border-bottom: none; }
+    .bo7-price-row span:first-child { color: #c4b49e; }
+    .bo7-price-row span:last-child { color: var(--gold); font-weight: 700; }
+
+    /* ── HAMBURGER ── */
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px; background: none;
+      border: none; cursor: pointer; padding: 4px; margin-left: 12px;
+    }
+    .hamburger span {
+      display: block; width: 24px; height: 2px; background: #e8d9c0;
+      border-radius: 2px; transition: all .3s;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* ── STICKY CALL BUTTON (mobile only) ── */
+    .sticky-call {
+      display: none;
+      position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+      z-index: 300; white-space: nowrap;
+    }
+    .sticky-call a {
+      display: flex; align-items: center; gap: 8px;
+      background: var(--red); color: #fff;
+      padding: 14px 28px; border-radius: 50px;
+      text-decoration: none; font-weight: 700;
+      font-size: .9rem; letter-spacing: .5px;
+      box-shadow: 0 4px 20px rgba(155,28,28,.55);
+      font-family: 'Lato', sans-serif;
+    }
+
+    /* ── MAPS ── */
+    .maps-iframe { width: 100%; height: 260px; border: 0; border-radius: 6px; margin-top: 24px; filter: grayscale(20%); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      nav { padding: 14px 18px; }
+      .nav-links {
+        display: none; position: absolute; top: 100%; left: 0; right: 0;
+        background: rgba(26,18,8,.97); flex-direction: column; gap: 0;
+        padding: 12px 0; border-top: 1px solid rgba(200,151,42,.2);
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 14px 24px; font-size: .85rem; }
+      .hamburger { display: flex; }
+      .about-inner { grid-template-columns: 1fr; gap: 36px; }
+      .about-img { height: 260px; }
+      .info-inner { grid-template-columns: 1fr; gap: 36px; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-grid img:first-child { grid-column: span 2; height: 200px; }
+      .modal-header { padding: 16px 18px; }
+      .modal-header h2 { font-size: 1.2rem; }
+      .menu-section { padding: 16px; }
+      .menu-grid { grid-template-columns: 1fr; }
+      .bo7-intro { grid-template-columns: 1fr; }
+      .size-grid { grid-template-columns: 1fr; }
+      .sticky-call { display: block; }
+      .maps-iframe { height: 200px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════ NAV ═══════════ -->
+<nav>
+  <div class="nav-logo">Thiên Ân Bò 7 Món</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+    <li><a href="#menu-section" data-i18n="nav_menu">Menu</a></li>
+    <li><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+    <li><a href="#info" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div style="display:flex;align-items:center">
+    <div class="lang-switcher">
+      <button class="lang-btn" onclick="setLang('vi')">VI</button>
+      <button class="lang-btn active" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" onclick="setLang('zh')">中文</button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero">
+  <div class="hero-badge" data-i18n="hero_badge">Nhà hàng Việt Nam · Rosemead, CA</div>
+  <h1>Thiên Ân<br /><span>Bò 7 Món</span></h1>
+  <p data-i18n="hero_sub">Trải nghiệm ẩm thực Sài Gòn chính thống với 7 món bò đặc sắc — mỗi món một cách chế biến, một hương vị riêng biệt.</p>
+  <div>
+    <button class="btn" onclick="openMenu()" data-i18n="hero_btn_menu">Xem thực đơn</button>
+    <a href="tel:6262866665" class="btn btn-outline" data-i18n="hero_btn_reserve">Đặt bàn ngay</a>
+  </div>
+</section>
+
+<!-- ═══════════ ABOUT ═══════════ -->
+<section class="about" id="about">
+  <div class="about-inner">
+    <div>
+      <img class="about-img" src="img/bo7-1-phan.jpeg" alt="Bò 7 Món Thiên Ân" />
+    </div>
+    <div>
+      <p class="section-label" data-i18n="about_label">Câu chuyện của chúng tôi</p>
+      <h2 class="section-title" data-i18n="about_title">Tinh hoa ẩm thực<br />Sài Gòn xưa</h2>
+      <div class="divider divider-left"></div>
+      <p data-i18n="about_p1"><strong>Bò 7 Món</strong> là tinh túy của ẩm thực Nam Bộ — một bữa tiệc bảy món bò được chế biến theo bảy cách khác nhau, từ nướng lá lốt đến nhúng giấm, mỗi món mang một hương vị và kết cấu độc đáo.</p>
+      <p data-i18n="about_p2">Tại Thiên Ân, chúng tôi giữ nguyên vẹn công thức truyền thống, dùng nguyên liệu tươi ngon và gia vị thủ công để mang đến bữa ăn đậm chất quê hương ngay giữa lòng California.</p>
+      <p data-i18n="about_p3">Không chỉ là bữa ăn — đây là trải nghiệm quây quần, cùng tự cuộn bánh tráng, chấm nước chấm thơm ngào ngạt, tận hưởng từng khoảnh khắc bên gia đình và bạn bè.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 7 COURSES ═══════════ -->
+<section class="courses" id="menu-section">
+  <p class="section-label" data-i18n="courses_label">Đặc sản nổi tiếng</p>
+  <h2 class="section-title" data-i18n="courses_title">Bảy Món Bò Đặc Trưng</h2>
+  <div class="divider"></div>
+  <div class="courses-grid">
+    <div class="course-card"><div class="course-num">01</div><h3 data-i18n="c1_name">Gỏi Bò Tôm</h3><p data-i18n="c1_desc">Salad bò tôm đặc trưng Thiên Ân, ăn kèm bánh phồng tôm</p></div>
+    <div class="course-card"><div class="course-num">02</div><h3 data-i18n="c2_name">Bò Nhúng Dấm</h3><p data-i18n="c2_desc">Thịt bò tươi nhúng nước giấm nóng, cuộn bánh tráng rau sống</p></div>
+    <div class="course-card"><div class="course-num">03</div><h3 data-i18n="c3_name">Bò Nướng Vỉ</h3><p data-i18n="c3_desc">Bò thái mỏng ướp gia vị đặc biệt, nướng vĩ giòn ngon</p></div>
+    <div class="course-card"><div class="course-num">04</div><h3 data-i18n="c4_name">Bò Nướng Mỡ Chài</h3><p data-i18n="c4_desc">Viên bò nướng mỡ chài thơm ngon, giòn bên ngoài mềm bên trong</p></div>
+    <div class="course-card"><div class="course-num">05</div><h3 data-i18n="c5_name">Bò Nướng Lá Lốt</h3><p data-i18n="c5_desc">Thịt bò băm nhuyễn gói lá lốt, nướng thơm lừng</p></div>
+    <div class="course-card"><div class="course-num">06</div><h3 data-i18n="c6_name">Bò Chả Đùm</h3><p data-i18n="c6_desc">Chả bò hấp với nấm và gia vị, phủ hành tây kho ngọt</p></div>
+    <div class="course-card"><div class="course-num">07</div><h3 data-i18n="c7_name">Cháo Bò</h3><p data-i18n="c7_desc">Cháo bò nấu từ xương hầm, kết thúc bữa tiệc ấm lòng</p></div>
+  </div>
+  <div style="margin-top:48px; text-align:center">
+    <button class="btn" onclick="openMenu()" data-i18n="see_full_menu">Xem thực đơn đầy đủ →</button>
+  </div>
+</section>
+
+<!-- ═══════════ HIGHLIGHTS ═══════════ -->
+<section class="highlights">
+  <div class="highlights-inner">
+    <p class="section-label" data-i18n="hl_label">Tại sao chọn chúng tôi</p>
+    <h2 class="section-title" data-i18n="hl_title">Điểm Nổi Bật</h2>
+    <div class="divider"></div>
+    <div class="highlights-grid">
+      <div class="hl-card"><div class="hl-icon">🥩</div><h3 data-i18n="hl1_title">Nguyên liệu tươi ngon</h3><p data-i18n="hl1_desc">Thịt bò chọn lọc mỗi ngày, rau sống sạch, gia vị truyền thống không phụ gia</p></div>
+      <div class="hl-card"><div class="hl-icon">🍶</div><h3 data-i18n="hl2_title">Không gian ấm cúng</h3><p data-i18n="hl2_desc">Phù hợp cho gia đình, nhóm bạn, tiệc sinh nhật — chỗ đậu xe riêng tiện lợi</p></div>
+      <div class="hl-card"><div class="hl-icon">🛵</div><h3 data-i18n="hl3_title">Giao hàng tận nơi</h3><p data-i18n="hl3_desc">Đặt qua DoorDash, Grubhub hoặc gọi trực tiếp — mang hương vị Thiên Ân về nhà</p></div>
+      <div class="hl-card"><div class="hl-icon">🍺</div><h3 data-i18n="hl4_title">Bia & Rượu vang</h3><p data-i18n="hl4_desc">Thực đơn đồ uống đa dạng, hoàn hảo để kết hợp cùng bò nướng</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ GALLERY ═══════════ -->
+<section class="gallery" id="gallery">
+  <p class="section-label" style="text-align:center" data-i18n="gallery_label">Hình ảnh</p>
+  <h2 data-i18n="gallery_title">Khoảnh Khắc Tại Thiên Ân</h2>
+  <div class="divider"></div>
+  <div class="gallery-grid">
+    <img src="img/space-1.jpeg" alt="Thiên Ân restaurant interior" />
+    <img src="img/space-2.jpeg" alt="Dining area at Thiên Ân" />
+    <img src="img/space-3.jpeg" alt="Cozy atmosphere at Thiên Ân" />
+    <img src="img/space-4.jpeg" alt="Restaurant seating area" />
+    <img src="img/space-5.jpeg" alt="Thiên Ân dining room" />
+    <img src="img/ca-nuong.jpeg" alt="Signature Baked Catfish – Cá Nướng Da Giòn" />
+    <img src="img/bo-nuong-combo.jpeg" alt="Bò Nướng – Grilled Beef Combo" />
+    <img src="img/goi-bo-tom.jpeg" alt="Gỏi Bò Tôm – Shrimp & Beef Salad" />
+  </div>
+</section>
+
+<!-- ═══════════ INFO ═══════════ -->
+<section class="info" id="info">
+  <div class="info-inner">
+    <div>
+      <h2 data-i18n="info_hours">Giờ Mở Cửa</h2>
+      <table class="hours-table">
+        <tr><td data-i18n="day_sun">Chủ nhật</td><td>12:00 PM – 9:00 PM</td></tr>
+        <tr><td data-i18n="day_mon">Thứ Hai</td><td>3:30 PM – 9:00 PM</td></tr>
+        <tr><td data-i18n="day_tue">Thứ Ba</td><td class="closed" data-i18n="closed">Đóng cửa</td></tr>
+        <tr><td data-i18n="day_wed">Thứ Tư</td><td>3:30 PM – 9:00 PM</td></tr>
+        <tr><td data-i18n="day_thu">Thứ Năm</td><td>3:30 PM – 9:00 PM</td></tr>
+        <tr><td data-i18n="day_fri">Thứ Sáu</td><td>12:00 PM – 9:00 PM</td></tr>
+        <tr><td data-i18n="day_sat">Thứ Bảy</td><td>12:00 PM – 9:00 PM</td></tr>
+      </table>
+    </div>
+    <div>
+      <h2 data-i18n="info_contact">Liên Hệ & Địa Chỉ</h2>
+      <div class="info-detail"><div class="icon">📍</div><p><strong data-i18n="info_addr_label">Địa chỉ</strong>8837 Valley Blvd, Rosemead, CA 91770</p></div>
+      <div class="info-detail"><div class="icon">📞</div><p><strong data-i18n="info_phone_label">Điện thoại</strong><a href="tel:6262866665" style="color:var(--gold)">(626) 286-6665</a></p></div>
+      <div class="info-detail"><div class="icon">🚗</div><p><strong data-i18n="info_parking_label">Đỗ xe</strong><span data-i18n="info_parking">Bãi đỗ xe riêng miễn phí</span></p></div>
+      <div class="info-detail"><div class="icon">🃏</div><p><strong data-i18n="info_pay_label">Thanh toán</strong><span data-i18n="info_pay">Chấp nhận thẻ tín dụng & tiền mặt</span></p></div>
+      <div class="info-detail"><div class="icon">📅</div><p><strong data-i18n="info_res_label">Đặt bàn</strong><span data-i18n="info_res">Gọi điện trước để đặt bàn, đặc biệt cuối tuần</span></p></div>
+      <div style="margin-top:28px">
+        <a href="https://maps.google.com/?q=8837+Valley+Blvd+Rosemead+CA" target="_blank" rel="noopener noreferrer" class="btn" data-i18n="info_map">Xem bản đồ →</a>
+      </div>
+      <iframe class="maps-iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.5!2d-118.0786!3d34.0664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2d1b7b2a5c5e7%3A0xabc!2s8837+Valley+Blvd%2C+Rosemead%2C+CA+91770!5e0!3m2!1sen!2sus!4v1"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        title="Thiên Ân Bò 7 Món location map"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CTA ═══════════ -->
+<section class="cta">
+  <h2 data-i18n="cta_title">Đặt Bàn Ngay Hôm Nay</h2>
+  <p data-i18n="cta_sub">Thưởng thức bữa tiệc bò 7 món cùng gia đình và bạn bè. Hương vị Sài Gòn giữa lòng California.</p>
+  <a href="tel:6262866665" class="btn">(626) 286-6665</a>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <p style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#a08060;margin-bottom:8px">Thiên Ân Bò 7 Món</p>
+  <p>8837 Valley Blvd, Rosemead, CA 91770 &nbsp;|&nbsp; <a href="tel:6262866665">(626) 286-6665</a></p>
+  <p style="margin-top:6px">
+    <a href="https://www.yelp.com/biz/thien-an-bo-7-mon-rosemead-2" target="_blank" rel="noopener noreferrer">Yelp</a> &nbsp;|&nbsp;
+    <a href="https://www.doordash.com/store/thien-an-bo-7-mon-restuarant-rosemead-878624/" target="_blank" rel="noopener noreferrer">DoorDash</a> &nbsp;|&nbsp;
+    <a href="https://www.grubhub.com/restaurant/thien-an-bo-7-mon-8837-valley-blvd-rosemead/5418984" target="_blank" rel="noopener noreferrer">Grubhub</a>
+  </p>
+  <p style="margin-top:14px;font-size:.78rem;color:#3d3028">© 2026 Thiên Ân Bò 7 Món · Rosemead, California</p>
+</footer>
+
+<!-- ═══════════════════════════════════════
+     MENU MODAL
+═══════════════════════════════════════ -->
+<div class="modal-overlay" id="menuModal" onclick="handleOverlayClick(event)" role="dialog" aria-modal="true" aria-label="Restaurant Menu">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h2 data-i18n="modal_title">Thực Đơn</h2>
+      <button class="modal-close" onclick="closeMenu()" aria-label="Close menu">✕</button>
+    </div>
+
+    <!-- TABS -->
+    <div class="menu-tabs">
+      <button class="menu-tab active" onclick=\"switchTab('appetizers', this)\" data-i18n="tab_appetizers">Khai Vị</button>
+      <button class="menu-tab" onclick=\"switchTab('sides', this)\" data-i18n="tab_sides">Món Riêng</button>
+      <button class="menu-tab" onclick=\"switchTab('grilled', this)\" data-i18n="tab_grilled">Nướng Vỉ / Nhúng Dấm</button>
+      <button class="menu-tab" onclick=\"switchTab('hotpot', this)\" data-i18n="tab_hotpot">Lẩu / Hotpot</button>
+      <button class="menu-tab" onclick=\"switchTab('catfish', this)\" data-i18n="tab_catfish">Cá Thiên Ân ⭐</button>
+      <button class="menu-tab" onclick=\"switchTab('bo7', this)\" data-i18n="tab_bo7">Bò 7 Món</button>
+      <button class="menu-tab" onclick=\"switchTab('drinks', this)\" data-i18n="tab_drinks">Giải Khát</button>
+    </div>
+
+    <!-- TAB: APPETIZERS -->
+    <div class="menu-section active" id="tab-appetizers">
+      <div class="menu-section-title" data-i18n="app_title">Khai Vị</div>
+      <div class="menu-section-sub" data-i18n="app_sub">Appetizers · 开胃菜</div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img class="menu-item-img" src="img/goi-bo-tom.jpeg" alt="Gỏi Bò Tôm Thiên Ân" />
+          <div class="menu-item-body">
+            <div class="menu-item-name">Gỏi Bò Tôm Thiên Ân</div>
+            <div class="menu-item-vn">Shrimp & Beef Salad · 牛虾沙拉</div>
+            <div class="menu-item-desc" data-i18n="a1_desc">Salad bò tôm đặc trưng Thiên Ân, ăn kèm bánh phồng tôm.</div>
+            <div class="menu-item-price">$17.00</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;"><span style="font-size:2rem">🥩</span><span style="font-size:.75rem;color:#6a5a48;letter-spacing:1px;text-transform:uppercase">Ảnh sắp có</span></div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Bò Tái Chanh</div>
+            <div class="menu-item-vn">Beef Salad w/ Anchovy Sauce · 柠檬腌牛肉</div>
+            <div class="menu-item-desc" data-i18n="a2_desc">Gỏi bò tươi với nước mắm cá cơm và ớt tươi.</div>
+            <div class="menu-item-price">$26.00</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-img" src="img/tom-lan-bot.jpeg" alt="Tôm Lăn Bột" />
+          <div class="menu-item-body">
+            <div class="menu-item-name">Tôm Lăn Bột</div>
+            <div class="menu-item-vn">Crispy Shrimp Tempura · 脆皮虾天妇罗</div>
+            <div class="menu-item-desc" data-i18n="a3_desc">Tôm chiên giòn kiểu tempura, dùng kèm sốt ranch.</div>
+            <div class="menu-item-price">$28.00</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-img" src="img/nem-chua-bo.jpeg" alt="Nem Chua Bò" />
+          <div class="menu-item-body">
+            <div class="menu-item-name">Nem Chua Bò</div>
+            <div class="menu-item-vn">Cured Beef Slice · 腌牛肉片</div>
+            <div class="menu-item-desc" data-i18n="a4_desc">Thịt bò muối chua truyền thống.</div>
+            <div class="menu-item-price">$15.00</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-img" src="img/cha-gio.jpeg" alt="Chả Giò" />
+          <div class="menu-item-body">
+            <div class="menu-item-name">Chả Giò</div>
+            <div class="menu-item-vn">Pork & Shrimp Egg Rolls · 猪肉虾春卷</div>
+            <div class="menu-item-desc" data-i18n="a5_desc">Chả giò tôm thịt chiên giòn, dùng kèm rau sống và nước chấm.</div>
+            <div class="menu-item-price">$16.00</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-img" src="img/cha-gio-chay.jpeg" alt="Chả Giò Chay" />
+          <div class="menu-item-body">
+            <div class="menu-item-name">Chả Giò Chay</div>
+            <div class="menu-item-vn">Vegetarian Egg Rolls · 素春卷</div>
+            <div class="menu-item-desc" data-i18n="a6_desc">Chả giò chay chiên giòn, dùng kèm nước chấm chay và rau sống.</div>
+            <div class="menu-item-price">$16.00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB: SIDES -->
+    <div class="menu-section" id="tab-sides">
+      <div class="menu-section-title" data-i18n="sides_title">Món Riêng</div>
+      <div class="menu-section-sub" data-i18n="sides_sub">Side Orders · 单点菜品</div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img class="menu-item-img" src="img/thit-nuong.jpeg" alt="Dĩa Thịt Nướng" />
+          <div class="menu-item-body">
+            <div class="menu-item-name">Dĩa Thịt Nướng</div>
+            <div class="menu-item-vn">Charbroiled BBQ Pork · 炭烤腌猪肉</div>
+            <div class="menu-item-desc" data-i18n="s1_desc">Thịt heo nướng than, ướp gia vị thơm ngon.</div>
+            <div class="menu-item-price">$16.50</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-img" src="img/bo-nuong-xa.jpeg" alt="Bò Nướng Sả" />
+          <div class="menu-item-body">
+            <div class="menu-item-name">Bò Nướng Sả</div>
+            <div class="menu-item-vn">Lemongrass Charbroiled Beef · 香茅炭烤牛肉</div>
+            <div class="menu-item-desc" data-i18n="s2_desc">Bò nướng sả hành, ăn kèm bánh tráng và rau sống. (Nhỏ: 5 miếng / Lớn: 10 miếng)</div>
+            <div class="menu-item-price">$16.00 <span data-i18n="sm_lg">Sm/Lg</span></div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-img" src="img/bo-la-lot.jpeg" alt="Bò Nướng Lá Lốt" />
+          <div class="menu-item-body">
+            <div class="menu-item-name">Bò Nướng Lá Lốt</div>
+            <div class="menu-item-vn">Beef in Betel Leaf · 假蒟叶炭烤牛肉卷</div>
+            <div class="menu-item-desc" data-i18n="s3_desc">Bò cuộn lá lốt nướng thơm lừng. (Nhỏ: 5 miếng / Lớn: 10 miếng)</div>
+            <div class="menu-item-price">$14.00 <span data-i18n="sm_lg">Sm/Lg</span></div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-img" src="img/bo-mo-chai.jpeg" alt="Bò Nướng Mỡ Chài" />
+          <div class="menu-item-body">
+            <div class="menu-item-name">Bò Nướng Mỡ Chài</div>
+            <div class="menu-item-vn">Charbroiled Beef Meatball · 炭烤牛肉丸</div>
+            <div class="menu-item-desc" data-i18n="s4_desc">Viên bò nướng mỡ chài thơm ngon. (Nhỏ: 5 miếng / Lớn: 10 miếng)</div>
+            <div class="menu-item-price">$14.00 <span data-i18n="sm_lg">Sm/Lg</span></div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;"><span style="font-size:2rem">🥩</span><span style="font-size:.75rem;color:#6a5a48;letter-spacing:1px;text-transform:uppercase">Ảnh sắp có</span></div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Bò Nhúng Dấm</div>
+            <div class="menu-item-vn">Beef Fondue in Vinegar · 醋火锅牛肉</div>
+            <div class="menu-item-desc" data-i18n="s5_desc">Thịt bò thăn thái mỏng nhúng giấm nóng, cuộn bánh tráng rau sống.</div>
+            <div class="menu-item-price">$14.00 <span data-i18n="sm_lg">Sm/Lg</span></div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;"><span style="font-size:2rem">🥩</span><span style="font-size:.75rem;color:#6a5a48;letter-spacing:1px;text-transform:uppercase">Ảnh sắp có</span></div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Bò Nướng Vỉ</div>
+            <div class="menu-item-vn">Marinated Grilled Beef · 腌制烤牛肉</div>
+            <div class="menu-item-desc" data-i18n="s6_desc">Thịt bò thăn ướp gia vị đặc biệt, nướng vỉ giòn tan.</div>
+            <div class="menu-item-price">$14.00 <span data-i18n="sm_lg">Sm/Lg</span></div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-img" src="img/bo-cha-dum.jpeg" alt="Bò Chả Đùm" />
+          <div class="menu-item-body">
+            <div class="menu-item-name">Bò Chả Đùm</div>
+            <div class="menu-item-vn">Steamed Beef Paste · 蒸牛肉饼</div>
+            <div class="menu-item-desc" data-i18n="s7_desc">Chả bò hấp với nấm, hạt và gia vị, phủ hành tây kho ngọt. Ăn kèm bánh phồng tôm và nước chấm.</div>
+            <div class="menu-item-price">$10.50</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img class="menu-item-img" src="img/chao-bo.jpeg" alt="Cháo Bò" />
+          <div class="menu-item-body">
+            <div class="menu-item-name">Cháo Bò</div>
+            <div class="menu-item-vn">Beef Rice Porridge · 牛肉粥</div>
+            <div class="menu-item-desc" data-i18n="s8_desc">Cháo bò đặc trưng nhà hàng, nấu theo công thức bí truyền.</div>
+            <div class="menu-item-price" data-i18n="price_ask">Hỏi nhân viên</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB: GRILLED -->
+    <div class="menu-section" id="tab-grilled">
+      <div class="menu-section-title" data-i18n="grilled_title">Món Nướng Vỉ / Nhúng Dấm</div>
+      <div class="menu-section-sub" data-i18n="grilled_sub">Grilled &amp; Fondue Courses · 铁板烧/火锅</div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;"><span style="font-size:2rem">🥩</span><span style="font-size:.75rem;color:#6a5a48;letter-spacing:1px;text-transform:uppercase">Ribeye</span></div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Ribeye Nướng Vỉ / Nhúng Dấm</div>
+            <div class="menu-item-vn">Ribeye Grilled / Fondue · 肋眼牛排铁板/火锅</div>
+            <div class="menu-item-price">$30.00</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;"><span style="font-size:2rem">🦌</span><span style="font-size:.75rem;color:#6a5a48;letter-spacing:1px;text-transform:uppercase">Venison</span></div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Nai Nướng Vỉ / Nhúng Dấm</div>
+            <div class="menu-item-vn">Venison Grilled / Fondue · 鹿肉铁板/火锅</div>
+            <div class="menu-item-price">$28.00</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;"><span style="font-size:2rem">🍤</span><span style="font-size:.75rem;color:#6a5a48;letter-spacing:1px;text-transform:uppercase">Shrimp</span></div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Tôm Nướng Vỉ / Nhúng Dấm</div>
+            <div class="menu-item-vn">Grilled Shrimp · 铁板烤虾</div>
+            <div class="menu-item-price">$27.00</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;"><span style="font-size:2rem">🦑</span><span style="font-size:.75rem;color:#6a5a48;letter-spacing:1px;text-transform:uppercase">Squid</span></div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Mực Nướng Vỉ / Nhúng Dấm</div>
+            <div class="menu-item-vn">Grilled Squid · 铁板烤鱿鱼</div>
+            <div class="menu-item-price">$27.00</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;"><span style="font-size:2rem">🥩</span><span style="font-size:.75rem;color:#6a5a48;letter-spacing:1px;text-transform:uppercase">Beef + Shrimp</span></div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Bò và Tôm Nướng Vỉ / Nhúng Dấm</div>
+            <div class="menu-item-vn">Beef &amp; Shrimp Grilled · 铁板牛肉虾</div>
+            <div class="menu-item-price">$25.00</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;"><span style="font-size:2rem">🦑</span><span style="font-size:.75rem;color:#6a5a48;letter-spacing:1px;text-transform:uppercase">Squid + Shrimp</span></div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Mực và Tôm Nướng Vỉ / Nhúng Dấm</div>
+            <div class="menu-item-vn">Squid &amp; Shrimp Grilled · 铁板鱿鱼虾</div>
+            <div class="menu-item-price">$27.00</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;"><span style="font-size:2rem">🦑</span><span style="font-size:.75rem;color:#6a5a48;letter-spacing:1px;text-transform:uppercase">Squid + Beef</span></div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Mực và Bò Nướng Vỉ / Nhúng Dấm</div>
+            <div class="menu-item-vn">Squid &amp; Beef Grilled · 铁板鱿鱼牛肉</div>
+            <div class="menu-item-price">$25.00</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;"><span style="font-size:2rem">🍽️</span><span style="font-size:.75rem;color:#6a5a48;letter-spacing:1px;text-transform:uppercase">Trio</span></div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Tôm Mực và Bò Nướng Vỉ / Nhúng Dấm</div>
+            <div class="menu-item-vn">Shrimp, Squid &amp; Beef Grilled · 铁板虾鱿鱼牛肉</div>
+            <div class="menu-item-price">$26.00</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;"><span style="font-size:2rem">🐟</span><span style="font-size:.75rem;color:#6a5a48;letter-spacing:1px;text-transform:uppercase">Fish</span></div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Cá Nướng Vỉ / Nhúng Dấm</div>
+            <div class="menu-item-vn">Grilled Fish · 铁板烤鱼</div>
+            <div class="menu-item-price">$30.00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB: HOTPOT -->
+    <div class="menu-section" id="tab-hotpot">
+      <div class="menu-section-title" data-i18n="hotpot_title">Lẩu / Hotpot</div>
+      <div class="menu-section-sub" data-i18n="hotpot_sub">Vietnamese Hotpot · 越式火锅</div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;"><span style="font-size:2rem">🫕</span><span style="font-size:.75rem;color:#6a5a48;letter-spacing:1px;text-transform:uppercase">Seafood</span></div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Lẩu Cù Lao Bãi Biển</div>
+            <div class="menu-item-vn">Seafood Hotpot · 海鲜火锅</div>
+            <div class="menu-item-desc">Lẩu hải sản với cá tra, tôm, mực và cá viên. Đậm đà vị biển.</div>
+            <div class="menu-item-price">$68.00</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;"><span style="font-size:2rem">🫕</span><span style="font-size:.75rem;color:#6a5a48;letter-spacing:1px;text-transform:uppercase">Fish Sauce</span></div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Lẩu Mắm và Rau</div>
+            <div class="menu-item-vn">Fish Sauce Hotpot w/ Vegetables · 鱼露蔬菜火锅</div>
+            <div class="menu-item-desc">Lẩu mắm đặc trưng miền Nam với rau sống, cá tra, tôm, mực và thịt heo.</div>
+            <div class="menu-item-price">$54.00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB: CATFISH -->
+    <div class="menu-section" id="tab-catfish">
+      <div class="menu-section-title" data-i18n="cat_title">Cá Nướng Thiên Ân</div>
+      <div class="menu-section-sub" data-i18n="cat_sub">Signature Baked Catfish · 招牌烤鲶鱼</div>
+      <div class="catfish-card">
+        <img class="catfish-img" src="img/ca-nuong.jpeg" alt="Cá Nướng Da Giòn" />
+        <div class="catfish-body">
+          <div class="bestseller-badge" data-i18n="bestseller">⭐ Best Seller</div>
+          <h3>Cá Nướng Da Giòn</h3>
+          <div class="sub">Ca Nuong Da Gion · 脆皮烤鲶鱼</div>
+          <p data-i18n="cat_desc">Cá tra nguyên con nướng giòn da, không chiên, không đông lạnh. Nấu theo đơn đặt hàng, rắc hành lá, đậu phộng và ngò gai. Dùng kèm bánh tráng, rau sống, cà rốt, củ cải, giá đỗ, bún và nước chấm tự chọn. <strong style="color:var(--gold)">Gọi trước 30 phút để chuẩn bị!</strong></p>
+          <div class="size-grid">
+            <div class="size-row"><span class="size-label" data-i18n="size_s">Nhỏ (Small)</span><span class="size-price">$57</span></div>
+            <div class="size-row"><span class="size-label" data-i18n="size_m">Vừa (Medium)</span><span class="size-price">$77</span></div>
+            <div class="size-row"><span class="size-label" data-i18n="size_l">Lớn (Large)</span><span class="size-price">$92</span></div>
+            <div class="size-row"><span class="size-label" data-i18n="size_xl">Extra Lớn (XL)</span><span class="size-price">$115</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB: BO 7 MON -->
+    <div class="menu-section" id="tab-bo7">
+      <div class="menu-section-title" data-i18n="bo7_title">Bò 7 Món</div>
+      <div class="menu-section-sub" data-i18n="bo7_sub">7 Course of Beef · 七品牛肉盛宴</div>
+      <div class="bo7-intro">
+        
+        <div class="bo7-intro-text">
+          <h3 data-i18n="bo7_intro_title">Bữa Tiệc Bò Đặc Sắc</h3>
+          <p data-i18n="bo7_intro_p1">Trải nghiệm ẩm thực đỉnh cao của Nam Bộ — 7 món bò được chế biến theo 7 cách khác nhau, phục vụ tuần tự theo từng món.</p>
+          <p data-i18n="bo7_intro_p2">Phù hợp cho nhóm từ 2 người trở lên. Bao gồm đầy đủ rau sống, bánh tráng, bún và các loại nước chấm đặc trưng.</p>
+          <p data-i18n="bo7_intro_p3" style="color:var(--gold);font-weight:700">Đặt bàn trước để đảm bảo phục vụ tốt nhất: (626) 286-6665</p>
+        </div>
+      </div>
+      <div class="bo7-courses">
+        <div class="bo7-course">
+          <div class="bo7-course-num">01</div>
+          <div class="bo7-course-body">
+            <h4 data-i18n="bc1_name">Gỏi Bò Tôm</h4>
+            <div class="bo7-course-sub">House Special Shrimp &amp; Beef Salad · 天思鮮蝦牛肉凉拌</div>
+            <p data-i18n="bc1_desc">Salad bò tôm đặc trưng Thiên Ân, ăn kèm bánh phồng tôm</p>
+          </div>
+        </div>
+        <div class="bo7-course">
+          <div class="bo7-course-num">02</div>
+          <div class="bo7-course-body">
+            <h4 data-i18n="bc2_name">Bò Nhúng Dấm</h4>
+            <div class="bo7-course-sub">Thin Sliced Beef Tenderloin · 醋鍋牛肉</div>
+            <p data-i18n="bc2_desc">Thịt bò tươi nhúng nước giấm nóng, cuộn bánh tráng rau sống</p>
+          </div>
+        </div>
+        <div class="bo7-course">
+          <div class="bo7-course-num">03</div>
+          <div class="bo7-course-body">
+            <h4 data-i18n="bc3_name">Bò Nướng Vỉ</h4>
+            <div class="bo7-course-sub">Marinated Sliced Beef Tenderloin · 鐵板烤牛肉</div>
+            <p data-i18n="bc3_desc">Bò thái mỏng ướp gia vị đặc biệt, nướng vĩ giòn ngon</p>
+          </div>
+        </div>
+        <div class="bo7-course">
+          <div class="bo7-course-num">04</div>
+          <div class="bo7-course-body">
+            <h4 data-i18n="bc4_name">Bò Nướng Mỡ Chài</h4>
+            <div class="bo7-course-sub">Juicy Charbroiled Meatball · 烤網油牛肉</div>
+            <p data-i18n="bc4_desc">Viên bò nướng mỡ chài thơm ngon, giòn bên ngoài mềm bên trong</p>
+          </div>
+        </div>
+        <div class="bo7-course">
+          <div class="bo7-course-num">05</div>
+          <div class="bo7-course-body">
+            <h4 data-i18n="bc5_name">Bò Nướng Lá Lốt</h4>
+            <div class="bo7-course-sub">Betel Leaf Beef Rolls · 烤香菜牛肉捲</div>
+            <p data-i18n="bc5_desc">Thịt bò băm nhuyễn gói lá lốt, nướng thơm lừng</p>
+          </div>
+        </div>
+        <div class="bo7-course">
+          <div class="bo7-course-num">06</div>
+          <div class="bo7-course-body">
+            <h4 data-i18n="bc6_name">Bò Chả Đùm</h4>
+            <div class="bo7-course-sub">Steamed Beef Paste with Nuts · 蒸牛肉餅</div>
+            <p data-i18n="bc6_desc">Chả bò hấp với nấm và gia vị, phủ hành tây kho ngọt</p>
+          </div>
+        </div>
+        <div class="bo7-course">
+          <div class="bo7-course-num">07</div>
+          <div class="bo7-course-body">
+            <h4 data-i18n="bc7_name">Cháo Bò</h4>
+            <div class="bo7-course-sub">House Special Beef Soup · 牛肉粥</div>
+            <p data-i18n="bc7_desc">Cháo bò nấu từ xương hầm, kết thúc bữa tiệc ấm lòng</p>
+          </div>
+        </div>
+      </div>
+      <div class="bo7-pricing">
+        <h4 data-i18n="bo7_price_title">GIÁ / PRICE · 价格</h4>
+        <div class="bo7-price-row">
+          <span data-i18n="bo7_p1">1 phần · 1 Order · 一份 <span style="font-size:.8rem;color:#8a7868">(dành cho 2 người · for 2 persons · 2人份)</span></span>
+          <span style="color:var(--gold);font-weight:700;font-size:1.15rem">$35</span>
+        </div>
+        <div style="margin-top:14px;font-size:.82rem;color:#6a5a48" data-i18n="bo7_note">* Gọi trước để đặt bàn: (626) 286-6665 — Call ahead to reserve.</div>
+      </div>
+    </div>
+
+
+    <!-- TAB: DRINKS -->
+    <div class="menu-section" id="tab-drinks">
+      <div class="menu-section-title" data-i18n="drinks_title">Giải Khát</div>
+      <div class="menu-section-sub" data-i18n="drinks_sub">Beverages · 饮料</div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;font-size:3rem;">🌿</div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Pennywort with Coconut</div>
+            <div class="menu-item-vn">Nước Rau Má Dừa · 薄荷椰子汁</div>
+            <div class="menu-item-price">$6.00</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;font-size:3rem;">🍋</div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Passion Fruit</div>
+            <div class="menu-item-vn">Nước Chanh Dây · 百香果汁</div>
+            <div class="menu-item-price">$6.00</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;font-size:3rem;">🍋</div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Soda Chanh</div>
+            <div class="menu-item-vn">Lemon Soda · 柠檬苏打</div>
+            <div class="menu-item-price">$5.50</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;font-size:3rem;">🥛</div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Soy Milk</div>
+            <div class="menu-item-vn">Sữa Đậu Nành · 豆浆</div>
+            <div class="menu-item-price">$5.50</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;font-size:3rem;">🧋</div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Thai Tea</div>
+            <div class="menu-item-vn">Trà Thái · 泰式奶茶</div>
+            <div class="menu-item-price">$5.50</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;font-size:3rem;">☕</div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Cà Phê Phin Sữa</div>
+            <div class="menu-item-vn">Vietnamese Iced Coffee · 越南冰咖啡</div>
+            <div class="menu-item-price">$6.00</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;font-size:3rem;">🍵</div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Hot Tea</div>
+            <div class="menu-item-vn">Trà Nóng · 热茶</div>
+            <div class="menu-item-price">$1.00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- .modal-box -->
+</div><!-- .modal-overlay -->
+
+<!-- STICKY CALL BUTTON (mobile) -->
+<div class="sticky-call">
+  <a href="tel:6262866665">📞 (626) 286-6665</a>
+</div>
+
+<!-- ═══════════════════════
+     JAVASCRIPT
+═══════════════════════ -->
+<script>
+// ── TRANSLATIONS ──────────────────────────────────────
+const T = {
+  en: {
+    nav_about: "About Us", nav_menu: "Menu", nav_gallery: "Gallery", nav_contact: "Contact",
+    hero_badge: "Vietnamese Restaurant · Rosemead, CA",
+    hero_sub: "Authentic Saigon cuisine featuring 7 unique beef courses — each prepared a different way, each unforgettable.",
+    hero_btn_menu: "View Menu", hero_btn_reserve: "Make a Reservation",
+    about_label: "Our Story", about_title: "The Soul of<br/>Saigon Cuisine",
+    about_p1: "<strong>Bò 7 Món</strong> is the crown jewel of Southern Vietnamese cuisine — a seven-course beef feast where each dish is prepared using a different technique, from betel leaf wraps to vinegar fondue.",
+    about_p2: "At Thiên Ân, we preserve authentic recipes using fresh ingredients and handcrafted seasonings to bring the taste of home to the heart of California.",
+    about_p3: "It's more than a meal — it's an experience of togetherness: wrapping your own rice paper rolls, dipping in fragrant sauces, sharing every moment with family and friends.",
+    courses_label: "Our Specialty", courses_title: "7 Course of Beef",
+    c1_name:"Shrimp & Beef Salad", c1_desc:"Thiên Ân's signature shrimp & beef salad, served with shrimp chips",
+    c2_name:"Beef Fondue", c2_desc:"Fresh beef slices dipped in hot vinegar broth, wrapped in rice paper with fresh herbs",
+    c3_name:"Grilled Beef on Iron", c3_desc:"Thinly sliced marinated beef grilled on an iron grill",
+    c4_name:"Charbroiled Beef Meatball", c4_desc:"Juicy charbroiled beef meatballs, crispy outside and tender inside",
+    c5_name:"Betel Leaf Beef Rolls", c5_desc:"Seasoned ground beef wrapped in betel leaves, char-grilled to perfection",
+    c6_name:"Steamed Beef Paste", c6_desc:"Steamed beef paste with mushrooms and spices, topped with glazed sweet onions",
+    c7_name:"Beef Porridge", c7_desc:"Slow-simmered bone broth porridge, a warm finish to the feast",
+    see_full_menu: "View Full Menu →",
+    hl_label: "Why Choose Us", hl_title: "What Makes Us Special",
+    hl1_title:"Fresh Ingredients", hl1_desc:"Hand-selected beef daily, fresh produce, traditional spices — no additives",
+    hl2_title:"Warm Atmosphere", hl2_desc:"Perfect for families, groups, and celebrations — with private parking",
+    hl3_title:"Delivery Available", hl3_desc:"Order via DoorDash, Grubhub, or call us directly",
+    hl4_title:"Beer & Wine", hl4_desc:"A curated drinks menu to pair with your grilled beef experience",
+    gallery_label:"Gallery", gallery_title:"Moments at Thiên Ân",
+    info_hours:"Hours", info_contact:"Contact & Location",
+    day_sun:"Sunday", day_mon:"Monday", day_tue:"Tuesday", day_wed:"Wednesday",
+    day_thu:"Thursday", day_fri:"Friday", day_sat:"Saturday",
+    closed:"Closed",
+    info_addr_label:"Address", info_phone_label:"Phone", info_parking_label:"Parking",
+    info_parking:"Free private lot", info_pay_label:"Payment",
+    info_pay:"Credit cards & cash accepted", info_res_label:"Reservations",
+    info_res:"Call ahead, especially on weekends", info_map:"Get Directions →",
+    cta_title:"Reserve Your Table Today",
+    cta_sub:"Enjoy a 7 course of beef with family and friends. The taste of Saigon, right here in California.",
+    modal_title:"Our Menu",
+    tab_appetizers:"Appetizers", tab_sides:"Side Orders", tab_grilled:"Grilled / Fondue", tab_hotpot:"Hotpot", tab_catfish:"Catfish ⭐", tab_bo7:"7 Course of Beef", tab_drinks:"Beverages", drinks_title:"Beverages", drinks_sub:"Giải Khát · 饮料", grilled_title:"Grilled &amp; Fondue Courses", grilled_sub:"Món Nướng Vỉ / Nhúng Dấm · 铁板烧/火锅", hotpot_title:"Hotpot", hotpot_sub:"Vietnamese Hotpot · 越式火锅",
+    app_title:"Appetizers", app_sub:"Khai Vị · 开胃菜",
+    a1_desc:"Thiên Ân's signature shrimp & beef salad, served with shrimp chips.",
+    a2_desc:"Fresh beef salad with anchovy dipping sauce and fresh-cut chilies.",
+    a3_desc:"Crispy shrimp tempura served with ranch dressing.",
+    a4_desc:"Traditional cured beef slice.",
+    a5_desc:"Crispy pork & shrimp egg rolls served with fresh greens and fish sauce.",
+    a6_desc:"Crispy vegetarian egg rolls served with veg fish sauce and fresh greens.",
+    sides_title:"Side Orders", sides_sub:"Món Riêng · 单点菜品",
+    s1_desc:"Charbroiled marinated pork BBQ.", s2_desc:"Charbroiled beef with lemongrass & green onions, served with rice paper and fresh greens. (Sm: 5 pcs / Lg: 10 pcs)",
+    s3_desc:"Betel leaf charbroiled beef rolls, served with rice paper. (Sm: 5 pcs / Lg: 10 pcs)",
+    s4_desc:"Juicy charbroiled beef meatballs, served with rice paper. (Sm: 5 pcs / Lg: 10 pcs)",
+    s5_desc:"Thin beef tenderloin slices in hot vinegar fondue, wrapped with rice paper and greens.",
+    s6_desc:"Marinated beef tenderloin slices, grilled on an iron grill.",
+    s7_desc:"Steamed beef paste with nuts, mushrooms, and spices. Topped with sweet glazed onions. Served with shrimp chips and fish sauce.",
+    s8_desc:"House special beef and rice alphabet soup.",
+    sm_lg:"Sm/Lg", price_ask:"Ask server",
+    cat_title:"Thiên Ân Baked Catfish", cat_sub:"Signature Dish · 招牌烤鲶鱼",
+    bestseller:"⭐ Best Seller",
+    cat_desc:'Our famous whole catfish, baked to perfection — never fried or frozen. Cooked to order, garnished with green onions, peanuts, and cilantro. Served with rice paper, fresh greens, cucumber, radish, carrots, bean sprouts, vermicelli and your choice of sauce. <strong style="color:var(--gold)">Call 30 min ahead to order!</strong>',
+    size_s:"Small", size_m:"Medium", size_l:"Large", size_xl:"Extra Large (XL)",
+    bo7_title:"7 Course of Beef", bo7_sub:"Bò 7 Món · 七品牛肉盛宴",
+    bo7_intro_title:"The Ultimate Beef Experience",
+    bo7_intro_p1:"The crown jewel of Southern Vietnamese cuisine — 7 beef courses prepared 7 different ways, served one by one.",
+    bo7_intro_p2:"Perfect for groups of 2 or more. Includes fresh greens, rice paper, vermicelli, and signature dipping sauces.",
+    bo7_intro_p3:'Reserve in advance for the best experience: (626) 286-6665',
+    bc1_name:"Shrimp & Beef Salad", bc1_desc:"Gỏi Bò Tôm Thiên Ân · 天思鮮蝦牛肉凉拌",
+    bc2_name:"Beef Fondue", bc2_desc:"Bò Nhúng Dấm · 醋火锅牛肉",
+    bc3_name:"Grilled Beef", bc3_desc:"Bò Nướng Vỉ · 鐵板烤牛肉",
+    bc4_name:"Beef Meatball", bc4_desc:"Bò Nướng Mỡ Chài · 烤牛肉丸",
+    bc5_name:"Betel Leaf Beef Rolls", bc5_desc:"Bò Nướng Lá Lốt · 假蒟叶牛肉卷",
+    bc6_name:"Steamed Beef Paste", bc6_desc:"Bò Chả Đùm · 蒸牛肉饼",
+    bc7_name:"Beef Porridge", bc7_desc:"Cháo Bò · 牛肉粥",
+    bo7_price_title:"PRICE · GIÁ · 价格",
+    bo7_p1:'1 Order <span style="font-size:.8rem;color:#8a7868">(for 2 persons)</span>',
+    bo7_note:"* Call ahead to reserve: (626) 286-6665"
+  },
+  vi: {
+    nav_about:"Về chúng tôi", nav_menu:"Thực đơn", nav_gallery:"Hình ảnh", nav_contact:"Liên hệ",
+    hero_badge:"Nhà hàng Việt Nam · Rosemead, CA",
+    hero_sub:"Trải nghiệm ẩm thực Sài Gòn chính thống với 7 món bò đặc sắc — mỗi món một cách chế biến, một hương vị riêng biệt.",
+    hero_btn_menu:"Xem thực đơn", hero_btn_reserve:"Đặt bàn ngay",
+    about_label:"Câu chuyện của chúng tôi", about_title:"Tinh hoa ẩm thực<br/>Sài Gòn xưa",
+    about_p1:"<strong>Bò 7 Món</strong> là tinh túy của ẩm thực Nam Bộ — một bữa tiệc bảy món bò được chế biến theo bảy cách khác nhau, từ nướng lá lốt đến nhúng giấm, mỗi món mang một hương vị và kết cấu độc đáo.",
+    about_p2:"Tại Thiên Ân, chúng tôi giữ nguyên vẹn công thức truyền thống, dùng nguyên liệu tươi ngon và gia vị thủ công để mang đến bữa ăn đậm chất quê hương ngay giữa lòng California.",
+    about_p3:"Không chỉ là bữa ăn — đây là trải nghiệm quây quần, cùng tự cuộn bánh tráng, chấm nước chấm thơm ngào ngạt, tận hưởng từng khoảnh khắc bên gia đình và bạn bè.",
+    courses_label:"Đặc sản nổi tiếng", courses_title:"Bảy Món Bò Đặc Trưng",
+    c1_name:"Gỏi Bò Tôm", c1_desc:"Salad bò tôm đặc trưng Thiên Ân, ăn kèm bánh phồng tôm",
+    c2_name:"Bò Nhúng Dấm", c2_desc:"Thịt bò tươi nhúng nước giấm nóng, cuộn bánh tráng rau sống",
+    c3_name:"Bò Nướng Vỉ", c3_desc:"Bò thái mỏng ướp gia vị đặc biệt, nướng vĩ giòn ngon",
+    c4_name:"Bò Nướng Mỡ Chài", c4_desc:"Viên bò nướng mỡ chài thơm ngon, giòn bên ngoài mềm bên trong",
+    c5_name:"Bò Nướng Lá Lốt", c5_desc:"Thịt bò băm nhuyễn gói lá lốt, nướng thơm lừng",
+    c6_name:"Bò Chả Đùm", c6_desc:"Chả bò hấp với nấm và gia vị, phủ hành tây kho ngọt",
+    c7_name:"Cháo Bò", c7_desc:"Cháo bò nấu từ xương hầm, kết thúc bữa tiệc ấm lòng",
+    see_full_menu:"Xem thực đơn đầy đủ →",
+    hl_label:"Tại sao chọn chúng tôi", hl_title:"Điểm Nổi Bật",
+    hl1_title:"Nguyên liệu tươi ngon", hl1_desc:"Thịt bò chọn lọc mỗi ngày, rau sống sạch, gia vị truyền thống không phụ gia",
+    hl2_title:"Không gian ấm cúng", hl2_desc:"Phù hợp cho gia đình, nhóm bạn, tiệc sinh nhật — chỗ đậu xe riêng tiện lợi",
+    hl3_title:"Giao hàng tận nơi", hl3_desc:"Đặt qua DoorDash, Grubhub hoặc gọi trực tiếp — mang hương vị Thiên Ân về nhà",
+    hl4_title:"Bia & Rượu vang", hl4_desc:"Thực đơn đồ uống đa dạng, hoàn hảo để kết hợp cùng bò nướng",
+    gallery_label:"Hình ảnh", gallery_title:"Khoảnh Khắc Tại Thiên Ân",
+    info_hours:"Giờ Mở Cửa", info_contact:"Liên Hệ & Địa Chỉ",
+    day_sun:"Chủ nhật", day_mon:"Thứ Hai", day_tue:"Thứ Ba", day_wed:"Thứ Tư",
+    day_thu:"Thứ Năm", day_fri:"Thứ Sáu", day_sat:"Thứ Bảy",
+    closed:"Đóng cửa",
+    info_addr_label:"Địa chỉ", info_phone_label:"Điện thoại", info_parking_label:"Đỗ xe",
+    info_parking:"Bãi đỗ xe riêng miễn phí", info_pay_label:"Thanh toán",
+    info_pay:"Chấp nhận thẻ tín dụng & tiền mặt", info_res_label:"Đặt bàn",
+    info_res:"Gọi điện trước để đặt bàn, đặc biệt cuối tuần", info_map:"Xem bản đồ →",
+    cta_title:"Đặt Bàn Ngay Hôm Nay",
+    cta_sub:"Thưởng thức bữa tiệc bò 7 món cùng gia đình và bạn bè. Hương vị Sài Gòn giữa lòng California.",
+    modal_title:"Thực Đơn",
+    tab_appetizers:"Khai Vị", tab_sides:"Món Riêng", tab_grilled:"Nướng Vỉ / Nhúng Dấm", tab_hotpot:"Lẩu / Hotpot", tab_catfish:"Cá Thiên Ân ⭐", tab_bo7:"Bò 7 Món", tab_drinks:"Giải Khát", drinks_title:"Giải Khát", drinks_sub:"Beverages · 饮料", grilled_title:"Món Nướng Vỉ / Nhúng Dấm", grilled_sub:"Grilled &amp; Fondue Courses · 铁板烧/火锅", hotpot_title:"Lẩu / Hotpot", hotpot_sub:"Lẩu Việt Nam · 越式火锅",
+    app_title:"Khai Vị", app_sub:"Appetizers · 开胃菜",
+    a1_desc:"Salad bò tôm đặc trưng Thiên Ân, ăn kèm bánh phồng tôm.",
+    a2_desc:"Gỏi bò tươi với nước mắm cá cơm và ớt tươi.",
+    a3_desc:"Tôm chiên giòn kiểu tempura, dùng kèm sốt ranch.",
+    a4_desc:"Thịt bò muối chua truyền thống.",
+    a5_desc:"Chả giò tôm thịt chiên giòn, dùng kèm rau sống và nước chấm.",
+    a6_desc:"Chả giò chay chiên giòn, dùng kèm nước chấm chay và rau sống.",
+    sides_title:"Món Riêng", sides_sub:"Side Orders · 单点菜品",
+    s1_desc:"Thịt heo nướng than, ướp gia vị thơm ngon.",
+    s2_desc:"Bò nướng sả hành, ăn kèm bánh tráng và rau sống. (Nhỏ: 5 miếng / Lớn: 10 miếng)",
+    s3_desc:"Bò cuộn lá lốt nướng thơm lừng. (Nhỏ: 5 miếng / Lớn: 10 miếng)",
+    s4_desc:"Viên bò nướng mỡ chài thơm ngon. (Nhỏ: 5 miếng / Lớn: 10 miếng)",
+    s5_desc:"Thịt bò thăn thái mỏng nhúng giấm nóng, cuộn bánh tráng rau sống.",
+    s6_desc:"Thịt bò thăn ướp gia vị đặc biệt, nướng vỉ giòn tan.",
+    s7_desc:"Chả bò hấp với nấm, hạt và gia vị, phủ hành tây kho ngọt. Ăn kèm bánh phồng tôm và nước chấm.",
+    s8_desc:"Cháo bò đặc trưng nhà hàng, nấu theo công thức bí truyền.",
+    sm_lg:"Nhỏ/Lớn", price_ask:"Hỏi nhân viên",
+    cat_title:"Cá Nướng Thiên Ân", cat_sub:"Món đặc trưng · 招牌烤鲶鱼",
+    bestseller:"⭐ Bán Chạy Nhất",
+    cat_desc:'Cá tra nguyên con nướng giòn da, không chiên, không đông lạnh. Nấu theo đơn đặt hàng, rắc hành lá, đậu phộng và ngò gai. Dùng kèm bánh tráng, rau sống, cà rốt, củ cải, giá đỗ, bún và nước chấm tự chọn. <strong style="color:var(--gold)">Gọi trước 30 phút để chuẩn bị!</strong>',
+    size_s:"Nhỏ (Small)", size_m:"Vừa (Medium)", size_l:"Lớn (Large)", size_xl:"Extra Lớn (XL)",
+    bo7_title:"Bò 7 Món", bo7_sub:"7 Course of Beef · 七品牛肉盛宴",
+    bo7_intro_title:"Bữa Tiệc Bò Đặc Sắc",
+    bo7_intro_p1:"Trải nghiệm ẩm thực đỉnh cao của Nam Bộ — 7 món bò được chế biến theo 7 cách khác nhau, phục vụ tuần tự theo từng món.",
+    bo7_intro_p2:"Phù hợp cho nhóm từ 2 người trở lên. Bao gồm đầy đủ rau sống, bánh tráng, bún và các loại nước chấm đặc trưng.",
+    bo7_intro_p3:'Đặt bàn trước để đảm bảo phục vụ tốt nhất: (626) 286-6665',
+    bc1_name:"Gỏi Bò Tôm", bc1_desc:"Shrimp & Beef Salad · 天思鮮蝦牛肉凉拌",
+    bc2_name:"Bò Nhúng Dấm", bc2_desc:"Beef Fondue · 醋火锅牛肉",
+    bc3_name:"Bò Nướng Vỉ", bc3_desc:"Grilled Beef · 鐵板烤牛肉",
+    bc4_name:"Bò Nướng Mỡ Chài", bc4_desc:"Beef Meatball · 烤牛肉丸",
+    bc5_name:"Bò Nướng Lá Lốt", bc5_desc:"Betel Leaf Beef Rolls · 假蒟叶牛肉卷",
+    bc6_name:"Bò Chả Đùm", bc6_desc:"Steamed Beef Paste · 蒸牛肉饼",
+    bc7_name:"Cháo Bò", bc7_desc:"Beef Porridge · 牛肉粥",
+    bo7_price_title:"GIÁ / PRICE · 价格",
+    bo7_p1:'1 phần <span style="font-size:.8rem;color:#8a7868">(dành cho 2 người)</span>',
+    bo7_note:"* Gọi trước để đặt bàn: (626) 286-6665"
+  },
+  zh: {
+    nav_about:"关于我们", nav_menu:"菜单", nav_gallery:"图片", nav_contact:"联系我们",
+    hero_badge:"越南餐厅 · 加州罗斯米德",
+    hero_sub:"正宗西贡美食体验 — 七道风味各异的牛肉盛宴，每道菜用不同方式烹制，令人难忘。",
+    hero_btn_menu:"查看菜单", hero_btn_reserve:"立即预订",
+    about_label:"我们的故事", about_title:"西贡传统美食<br/>的精髓",
+    about_p1:"<strong>七品牛</strong>是南越美食的瑰宝 — 七道牛肉菜肴以七种不同方式烹制，从假蒟叶牛肉卷到醋火锅，每道菜都有独特的风味与口感。",
+    about_p2:"在天安，我们坚持传统配方，使用每日新鲜食材和手工调料，将家乡的味道带到加利福尼亚的中心。",
+    about_p3:"这不仅仅是一顿饭 — 而是一种团聚的体验：亲手卷米纸、蘸香浓酱汁，与家人朋友共享每一个美好时刻。",
+    courses_label:"特色名菜", courses_title:"七道特色牛肉",
+    c1_name:"天思鮮蝦牛肉凉拌", c1_desc:"天恩招牌虾牛沙拉，配虾片享用",
+    c2_name:"醋鍋牛肉", c2_desc:"新鲜牛肉片涮热醋汤，配米纸和新鲜蔬菜卷食",
+    c3_name:"鐵板烤牛肉", c3_desc:"腌制牛肉片薄切，铁板烤制香脆可口",
+    c4_name:"烤網油牛肉", c4_desc:"多汁炭烤牛肉丸，外脆内嫩",
+    c5_name:"烤香菜牛肉捲", c5_desc:"调味牛肉糜裹假蒟叶，炭烤至香气四溢",
+    c6_name:"蒸牛肉饼", c6_desc:"蒸牛肉饼配蘑菇和香料，浇甜洋葱酱",
+    c7_name:"牛肉粥", c7_desc:"骨汤慢熬牛肉粥，温暖结束这场盛宴",
+    see_full_menu:"查看完整菜单 →",
+    hl_label:"为什么选择我们", hl_title:"我们的特色",
+    hl1_title:"新鲜食材", hl1_desc:"每日精选牛肉，新鲜蔬菜，传统调料，不含添加剂",
+    hl2_title:"温馨环境", hl2_desc:"适合家庭、团体、生日聚会 — 配有专属停车场",
+    hl3_title:"外卖配送", hl3_desc:"通过DoorDash、Grubhub点餐，或直接致电",
+    hl4_title:"啤酒与葡萄酒", hl4_desc:"丰富的饮品菜单，完美搭配炭烤牛肉体验",
+    gallery_label:"图片", gallery_title:"天安的精彩瞬间",
+    info_hours:"营业时间", info_contact:"联系方式与地址",
+    day_sun:"周日", day_mon:"周一", day_tue:"周二", day_wed:"周三",
+    day_thu:"周四", day_fri:"周五", day_sat:"周六",
+    closed:"休息",
+    info_addr_label:"地址", info_phone_label:"电话", info_parking_label:"停车",
+    info_parking:"免费专属停车场", info_pay_label:"付款方式",
+    info_pay:"接受信用卡及现金", info_res_label:"预订",
+    info_res:"请提前致电预订，尤其是周末", info_map:"查看地图 →",
+    cta_title:"立即预订餐桌",
+    cta_sub:"与家人朋友共享七品牛肉盛宴。加州的西贡味道。",
+    modal_title:"菜单",
+    tab_appetizers:"开胃菜", tab_sides:"单点菜品", tab_grilled:"铁板烧/火锅", tab_hotpot:"越式火锅", tab_catfish:"招牌烤鲶鱼 ⭐", tab_bo7:"七品牛肉", tab_drinks:"饮料", drinks_title:"饮料", drinks_sub:"Beverages · Giải Khát", grilled_title:"铁板烧 / 火锅", grilled_sub:"Nướng Vỉ / Nhúng Dấm · Grilled &amp; Fondue", hotpot_title:"越式火锅", hotpot_sub:"Vietnamese Hotpot · Lẩu Việt Nam",
+    app_title:"开胃菜", app_sub:"Khai Vị · Appetizers",
+    a1_desc:"天安招牌虾牛沙拉，配虾片享用。",
+    a2_desc:"新鲜牛肉沙拉配鳀鱼蘸酱和新鲜辣椒。",
+    a3_desc:"脆皮虾天妇罗，配牧场沙拉酱。",
+    a4_desc:"传统腌制牛肉片。",
+    a5_desc:"脆皮猪肉虾春卷，配新鲜蔬菜和鱼露。",
+    a6_desc:"脆皮素春卷，配素鱼露和新鲜蔬菜。",
+    sides_title:"单点菜品", sides_sub:"Món Riêng · Side Orders",
+    s1_desc:"炭烤腌猪肉BBQ。",
+    s2_desc:"香茅炭烤牛肉配葱花，附米纸和新鲜蔬菜。（小：5块 / 大：10块）",
+    s3_desc:"假蒟叶炭烤牛肉卷，附米纸。（小：5块 / 大：10块）",
+    s4_desc:"多汁炭烤牛肉丸，附米纸。（小：5块 / 大：10块）",
+    s5_desc:"薄切牛里脊涮热醋汤，配米纸和新鲜蔬菜卷食。",
+    s6_desc:"腌制牛里脊片，铁板烤制。",
+    s7_desc:"蒸牛肉饼配坚果、蘑菇和香料，浇甜洋葱酱。配虾片和鱼露。",
+    s8_desc:"本店特色牛肉米粥。",
+    sm_lg:"小/大", price_ask:"请询问服务员",
+    cat_title:"天安招牌烤鲶鱼", cat_sub:"招牌菜 · Signature Dish",
+    bestseller:"⭐ 最畅销",
+    cat_desc:'我们招牌整条鲶鱼，烤至完美 — 从不油炸，从不冷冻。按订单烹制，撒上葱花、花生和香菜。配米纸、新鲜蔬菜、黄瓜、萝卜、胡萝卜、豆芽、米粉和自选蘸酱。<strong style="color:var(--gold)">请提前30分钟致电预订！</strong>',
+    size_s:"小 (Small)", size_m:"中 (Medium)", size_l:"大 (Large)", size_xl:"超大 (XL)",
+    bo7_title:"七品牛肉盛宴", bo7_sub:"Bò 7 Món · 7 Course of Beef",
+    bo7_intro_title:"终极牛肉盛宴体验",
+    bo7_intro_p1:"南越美食的巅峰之作 — 7道牛肉菜肴以7种不同方式烹制，依次上桌。",
+    bo7_intro_p2:"适合2人及以上团体。包含新鲜蔬菜、米纸、米粉及特色蘸酱。",
+    bo7_intro_p3:'请提前预订以获得最佳服务：(626) 286-6665',
+    bc1_name:"醋火锅牛肉", bc1_desc:"Bò Nhúng Dấm · Beef Fondue",
+    bc2_name:"假蒟叶烤牛肉", bc2_desc:"Bò Nướng Lá Lốt · Betel Leaf",
+    bc3_name:"铁板烤牛肉片", bc3_desc:"Bò Nướng Vỉ · Grilled Beef",
+    bc4_name:"炭烤牛肉丸", bc4_desc:"Bò Nướng Mỡ Chài · Meatball",
+    bc5_name:"香茅牛肉", bc5_desc:"Bò Nướng Sả · Lemongrass",
+    bc6_name:"蒸牛肉饼", bc6_desc:"Bò Chả Đùm · Steamed Paste",
+    bc7_name:"牛肉粥", bc7_desc:"Cháo Bò · Rice Porridge",
+    bo7_price_title:"价格 · PRICE · GIÁ",
+    bo7_p1:'一份 <span style="font-size:.8rem;color:#8a7868">(2人份)</span>',
+    bo7_note:"* 请致电预订：(626) 286-6665"
+  }
+};
+
+let currentLang = 'en';
+
+function setLang(lang) {
+  currentLang = lang;
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    b.classList.toggle('active', b.textContent.trim().toLowerCase() === lang ||
+      (lang === 'zh' && b.textContent.trim() === '中文'));
+  });
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (T[lang] && T[lang][key] !== undefined) {
+      el.innerHTML = T[lang][key];
+    }
+  });
+  document.documentElement.lang = lang === 'zh' ? 'zh' : lang;
+}
+
+// init with English
+setLang('en');
+
+// ── MENU MODAL ──────────────────────────────
+function openMenu() {
+  document.getElementById('menuModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeMenu() {
+  document.getElementById('menuModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function handleOverlayClick(e) {
+  if (e.target === document.getElementById('menuModal')) closeMenu();
+}
+function switchTab(name, btn) {
+  document.querySelectorAll('.menu-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.menu-section').forEach(s => s.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  if (btn) btn.classList.add('active');
+}
+
+function toggleNav() {
+  const nav = document.getElementById('navLinks');
+  const ham = document.getElementById('hamburger');
+  nav.classList.toggle('open');
+  ham.classList.toggle('open');
+}
+
+// Close mobile nav on link click
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.getElementById('navLinks').classList.remove('open');
+    document.getElementById('hamburger').classList.remove('open');
+  });
+});
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+</script>
+</body>
+</html>
