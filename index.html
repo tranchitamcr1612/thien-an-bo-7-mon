@@ -634,6 +634,7 @@
       <button class="menu-tab" onclick="switchTab('catfish', this)" data-i18n="tab_catfish">Cá Thiên Ân ⭐</button>
       <button class="menu-tab" onclick="switchTab('bo7', this)" data-i18n="tab_bo7">Bò 7 Món</button>
       <button class="menu-tab" onclick="switchTab('drinks', this)" data-i18n="tab_drinks">Giải Khát</button>
+      <button class="menu-tab" onclick="switchTab('addons', this)" data-i18n="tab_addons">Gọi Thêm</button>
     </div>
 
     <!-- TAB: APPETIZERS -->
@@ -920,7 +921,6 @@
           <h3 data-i18n="bo7_intro_title">Bữa Tiệc Bò Đặc Sắc</h3>
           <p data-i18n="bo7_intro_p1">Trải nghiệm ẩm thực đỉnh cao của Nam Bộ — 7 món bò được chế biến theo 7 cách khác nhau, phục vụ tuần tự theo từng món.</p>
           <p data-i18n="bo7_intro_p2">Phù hợp cho nhóm từ 2 người trở lên. Bao gồm đầy đủ rau sống, bánh tráng, bún và các loại nước chấm đặc trưng.</p>
-          <p data-i18n="bo7_intro_p3" style="color:var(--gold);font-weight:700">Đặt bàn trước để đảm bảo phục vụ tốt nhất: (626) 286-6665</p>
         </div>
       </div>
       <div class="bo7-courses">
@@ -1056,6 +1056,47 @@
       </div>
     </div>
 
+
+    <!-- TAB: ADD-ONS -->
+    <div class="menu-section" id="tab-addons">
+      <div class="menu-section-title" data-i18n="addons_title">Gọi Thêm</div>
+      <div class="menu-section-sub" data-i18n="addons_sub">Add-on Orders · 加点</div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;font-size:3rem;">🍜</div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Bún</div>
+            <div class="menu-item-vn">Vermicelli · 米线</div>
+            <div class="menu-item-price">$3.50</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;font-size:3rem;">🍝</div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Bánh Hỏi</div>
+            <div class="menu-item-vn">Woven Vermicelli · 编织米粉</div>
+            <div class="menu-item-price">$5.00</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;font-size:3rem;">🍘</div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Bánh Phồng Tôm</div>
+            <div class="menu-item-vn">Crispy Shrimp Chips · 虾片</div>
+            <div class="menu-item-price">$4.50</div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;font-size:3rem;">🍚</div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Cơm</div>
+            <div class="menu-item-vn">White Rice · 白米饭</div>
+            <div class="menu-item-price">$3.50</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div><!-- .modal-box -->
 </div><!-- .modal-overlay -->
 
@@ -1091,7 +1132,7 @@ const T = {
     hl_label: "Why Choose Us", hl_title: "What Makes Us Special",
     hl1_title:"Fresh Ingredients", hl1_desc:"Hand-selected beef daily, fresh produce, traditional spices — no additives",
     hl2_title:"Warm Atmosphere", hl2_desc:"Perfect for families, groups, and celebrations — with private parking",
-    hl3_title:"Delivery Available", hl3_desc:"Order via DoorDash, Grubhub, Uber Eats, or call us directly",
+    hl3_title:"Delivery Available", hl3_desc:"Delivery via DoorDash, Grubhub & Uber Eats. Phone orders are pick-up only.",
     hl4_title:"Beer & Wine", hl4_desc:"A curated drinks menu to pair with your grilled beef experience",
     gallery_label:"Gallery", gallery_title:"Moments at Thiên Ân",
     info_hours:"Hours", info_contact:"Contact & Location",
@@ -1105,7 +1146,7 @@ const T = {
     cta_title:"Reserve Your Table Today",
     cta_sub:"Enjoy a 7 course of beef with family and friends. The taste of Saigon, right here in California.",
     modal_title:"Our Menu",
-    tab_appetizers:"Appetizers", tab_sides:"Side Orders", tab_grilled:"Grilled / Fondue", tab_hotpot:"Hotpot", tab_catfish:"Catfish ⭐", tab_bo7:"7 Course of Beef", tab_drinks:"Beverages", drinks_title:"Beverages", drinks_sub:"Giải Khát · 饮料", grilled_title:"Grilled &amp; Fondue Courses", grilled_sub:"Món Nướng Vỉ / Nhúng Dấm · 铁板烧/火锅", hotpot_title:"Hotpot", hotpot_sub:"Vietnamese Hotpot · 越式火锅",
+    tab_appetizers:"Appetizers", tab_sides:"Side Orders", tab_grilled:"Grilled / Fondue", tab_hotpot:"Hotpot", tab_catfish:"Catfish ⭐", tab_bo7:"7 Course of Beef", tab_drinks:"Beverages", tab_addons:"Add-ons", drinks_title:"Beverages", addons_title:"Add-on Orders", addons_sub:"Gọi Thêm · 加点",, drinks_sub:"Giải Khát · 饮料", grilled_title:"Grilled &amp; Fondue Courses", grilled_sub:"Món Nướng Vỉ / Nhúng Dấm · 铁板烧/火锅", hotpot_title:"Hotpot", hotpot_sub:"Vietnamese Hotpot · 越式火锅",
     app_title:"Appetizers", app_sub:"Khai Vị · 开胃菜",
     a1_desc:"Thiên Ân's signature shrimp & beef salad, served with shrimp chips.",
     a2_desc:"Fresh beef salad with anchovy dipping sauce and fresh-cut chilies.",
@@ -1163,7 +1204,7 @@ const T = {
     hl_label:"Tại sao chọn chúng tôi", hl_title:"Điểm Nổi Bật",
     hl1_title:"Nguyên liệu tươi ngon", hl1_desc:"Thịt bò chọn lọc mỗi ngày, rau sống sạch, gia vị truyền thống không phụ gia",
     hl2_title:"Không gian ấm cúng", hl2_desc:"Phù hợp cho gia đình, nhóm bạn, tiệc sinh nhật — chỗ đậu xe riêng tiện lợi",
-    hl3_title:"Giao hàng tận nơi", hl3_desc:"Đặt qua DoorDash, Grubhub, Uber Eats hoặc gọi trực tiếp — mang hương vị Thiên Ân về nhà",
+    hl3_title:"Giao hàng tận nơi", hl3_desc:"Giao hàng qua DoorDash, Grubhub & Uber Eats. Gọi điện đặt trực tiếp vui lòng đến lấy tại quán.",
     hl4_title:"Bia & Rượu vang", hl4_desc:"Thực đơn đồ uống đa dạng, hoàn hảo để kết hợp cùng bò nướng",
     gallery_label:"Hình ảnh", gallery_title:"Khoảnh Khắc Tại Thiên Ân",
     info_hours:"Giờ Mở Cửa", info_contact:"Liên Hệ & Địa Chỉ",
@@ -1177,7 +1218,7 @@ const T = {
     cta_title:"Đặt Bàn Ngay Hôm Nay",
     cta_sub:"Thưởng thức bữa tiệc bò 7 món cùng gia đình và bạn bè. Hương vị Sài Gòn giữa lòng California.",
     modal_title:"Thực Đơn",
-    tab_appetizers:"Khai Vị", tab_sides:"Món Riêng", tab_grilled:"Nướng Vỉ / Nhúng Dấm", tab_hotpot:"Lẩu / Hotpot", tab_catfish:"Cá Thiên Ân ⭐", tab_bo7:"Bò 7 Món", tab_drinks:"Giải Khát", drinks_title:"Giải Khát", drinks_sub:"Beverages · 饮料", grilled_title:"Món Nướng Vỉ / Nhúng Dấm", grilled_sub:"Grilled &amp; Fondue Courses · 铁板烧/火锅", hotpot_title:"Lẩu / Hotpot", hotpot_sub:"Lẩu Việt Nam · 越式火锅",
+    tab_appetizers:"Khai Vị", tab_sides:"Món Riêng", tab_grilled:"Nướng Vỉ / Nhúng Dấm", tab_hotpot:"Lẩu / Hotpot", tab_catfish:"Cá Thiên Ân ⭐", tab_bo7:"Bò 7 Món", tab_drinks:"Giải Khát", tab_addons:"Gọi Thêm", drinks_title:"Giải Khát", addons_title:"Gọi Thêm", addons_sub:"Add-on Orders · 加点",, drinks_sub:"Beverages · 饮料", grilled_title:"Món Nướng Vỉ / Nhúng Dấm", grilled_sub:"Grilled &amp; Fondue Courses · 铁板烧/火锅", hotpot_title:"Lẩu / Hotpot", hotpot_sub:"Lẩu Việt Nam · 越式火锅",
     app_title:"Khai Vị", app_sub:"Appetizers · 开胃菜",
     a1_desc:"Salad bò tôm đặc trưng Thiên Ân, ăn kèm bánh phồng tôm.",
     a2_desc:"Gỏi bò tươi với nước mắm cá cơm và ớt tươi.",
@@ -1236,7 +1277,7 @@ const T = {
     hl_label:"为什么选择我们", hl_title:"我们的特色",
     hl1_title:"新鲜食材", hl1_desc:"每日精选牛肉，新鲜蔬菜，传统调料，不含添加剂",
     hl2_title:"温馨环境", hl2_desc:"适合家庭、团体、生日聚会 — 配有专属停车场",
-    hl3_title:"外卖配送", hl3_desc:"通过DoorDash、Grubhub、Uber Eats点餐，或直接致电",
+    hl3_title:"外卖配送", hl3_desc:"通过DoorDash、Grubhub及Uber Eats外卖配送。电话订餐需自行取餐。",
     hl4_title:"啤酒与葡萄酒", hl4_desc:"丰富的饮品菜单，完美搭配炭烤牛肉体验",
     gallery_label:"图片", gallery_title:"天安的精彩瞬间",
     info_hours:"营业时间", info_contact:"联系方式与地址",
@@ -1250,7 +1291,7 @@ const T = {
     cta_title:"立即预订餐桌",
     cta_sub:"与家人朋友共享七品牛肉盛宴。加州的西贡味道。",
     modal_title:"菜单",
-    tab_appetizers:"开胃菜", tab_sides:"单点菜品", tab_grilled:"铁板烧/火锅", tab_hotpot:"越式火锅", tab_catfish:"招牌烤鲶鱼 ⭐", tab_bo7:"七品牛肉", tab_drinks:"饮料", drinks_title:"饮料", drinks_sub:"Beverages · Giải Khát", grilled_title:"铁板烧 / 火锅", grilled_sub:"Nướng Vỉ / Nhúng Dấm · Grilled &amp; Fondue", hotpot_title:"越式火锅", hotpot_sub:"Vietnamese Hotpot · Lẩu Việt Nam",
+    tab_appetizers:"开胃菜", tab_sides:"单点菜品", tab_grilled:"铁板烧/火锅", tab_hotpot:"越式火锅", tab_catfish:"招牌烤鲶鱼 ⭐", tab_bo7:"七品牛肉", tab_drinks:"饮料", tab_addons:"加点", drinks_title:"饮料", addons_title:"加点", addons_sub:"Gọi Thêm · Add-on Orders",, drinks_sub:"Beverages · Giải Khát", grilled_title:"铁板烧 / 火锅", grilled_sub:"Nướng Vỉ / Nhúng Dấm · Grilled &amp; Fondue", hotpot_title:"越式火锅", hotpot_sub:"Vietnamese Hotpot · Lẩu Việt Nam",
     app_title:"开胃菜", app_sub:"Khai Vị · Appetizers",
     a1_desc:"天安招牌虾牛沙拉，配虾片享用。",
     a2_desc:"新鲜牛肉沙拉配鳀鱼蘸酱和新鲜辣椒。",
