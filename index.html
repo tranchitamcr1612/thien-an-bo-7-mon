@@ -99,14 +99,87 @@
     .about p { color: #c4b49e; line-height: 1.9; margin-bottom: 18px; font-size: 1.02rem; }
 
     /* ── 7 COURSES ── */
-    .courses { background: var(--cream); text-align: center; }
-    .courses .section-title { color: var(--dark); }
-    .courses-grid { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 24px; }
-    .course-card { background: #fff; border-radius: 6px; padding: 28px 18px; box-shadow: 0 4px 24px rgba(0,0,0,.07); transition: transform .2s, box-shadow .2s; }
-    .course-card:hover { transform: translateY(-6px); box-shadow: 0 12px 36px rgba(0,0,0,.13); }
-    .course-num { font-family: 'Playfair Display', serif; font-size: 2.4rem; color: var(--gold); margin-bottom: 10px; }
-    .course-card h3 { font-size: .95rem; font-weight: 700; margin-bottom: 8px; }
-    .course-card p { font-size: .85rem; color: var(--gray); line-height: 1.6; }
+    .courses {
+      background: var(--dark);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .courses::before {
+      content: '';
+      position: absolute; inset: 0; pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23C8972A' stroke-width='0.4' opacity='1'%3E%3Cpath d='M40 8 C50 20,60 20,72 40 C60 60,50 60,40 72 C30 60,20 60,8 40 C20 20,30 20,40 8Z'/%3E%3Ccircle cx='40' cy='40' r='6'/%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.04;
+      background-size: 80px 80px;
+    }
+    .courses .section-label { color: var(--gold); position: relative; }
+    .courses .section-title { color: #fff; position: relative; }
+    .courses .divider { position: relative; }
+    .courses-subtitle {
+      font-size: 1rem; color: #b09a7a; font-style: italic;
+      margin-top: -16px; margin-bottom: 40px;
+      letter-spacing: .5px; position: relative;
+    }
+    .courses-grid {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; flex-wrap: wrap; justify-content: center;
+      gap: 22px; position: relative;
+    }
+    .course-card {
+      background: linear-gradient(160deg, #261a0f 0%, #1e1208 100%);
+      border: 1px solid rgba(200,151,42,.3);
+      border-radius: 14px;
+      width: calc(25% - 17px);
+      min-width: 200px;
+      overflow: hidden;
+      transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+      box-shadow: 0 4px 20px rgba(0,0,0,.4);
+      position: relative;
+    }
+    .course-card::after {
+      content: ''; position: absolute; inset: 0; border-radius: 14px;
+      background: linear-gradient(to bottom, transparent 50%, rgba(26,18,8,.7) 100%);
+      pointer-events: none;
+    }
+    .course-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 50px rgba(200,151,42,.2), 0 8px 20px rgba(0,0,0,.5);
+      border-color: var(--gold);
+    }
+    .course-img {
+      width: 100%; height: 160px; object-fit: cover; display: block;
+      filter: brightness(.85) saturate(1.1);
+      transition: filter .4s ease, transform .4s ease;
+    }
+    .course-card:hover .course-img {
+      filter: brightness(1) saturate(1.25);
+      transform: scale(1.05);
+    }
+    .course-img-wrap { overflow: hidden; }
+    .course-badge {
+      position: absolute; top: 12px; left: 12px; z-index: 2;
+      width: 38px; height: 38px; border-radius: 50%;
+      background: rgba(26,18,8,.85); border: 1.5px solid var(--gold);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: .9rem; font-weight: 700; color: var(--gold);
+      box-shadow: 0 2px 10px rgba(0,0,0,.4);
+    }
+    .course-body {
+      padding: 18px 16px 20px;
+    }
+    .course-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem; font-weight: 700;
+      color: #fff; margin-bottom: 6px; line-height: 1.3;
+    }
+    .course-vn {
+      font-size: .78rem; color: var(--gold); opacity: .85;
+      letter-spacing: .5px; margin-bottom: 8px; font-style: italic;
+    }
+    .course-card p {
+      font-size: .82rem; color: #9a8878; line-height: 1.6; margin: 0;
+    }
 
     /* ── HIGHLIGHTS ── */
     .highlights { background: #1e140a; color: #e8d9c0; }
@@ -286,6 +359,7 @@
       .about-img { height: 260px; }
       .info-inner { grid-template-columns: 1fr; gap: 36px; }
       .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .course-card { width: calc(50% - 11px); min-width: unset; }
       .gallery-grid img:first-child { grid-column: span 2; height: 200px; }
       .modal-header { padding: 16px 18px; }
       .modal-header h2 { font-size: 1.2rem; }
@@ -354,16 +428,95 @@
   <p class="section-label" data-i18n="courses_label">Đặc sản nổi tiếng</p>
   <h2 class="section-title" data-i18n="courses_title">Bảy Món Bò Đặc Trưng</h2>
   <div class="divider"></div>
+  <p class="courses-subtitle" data-i18n="courses_subtitle">Bảy cách chế biến — một bữa tiệc không thể quên</p>
   <div class="courses-grid">
-    <div class="course-card"><div class="course-num">01</div><h3 data-i18n="c1_name">Gỏi Bò Tôm</h3><p data-i18n="c1_desc">Salad bò tôm đặc trưng Thiên Ân, ăn kèm bánh phồng tôm</p></div>
-    <div class="course-card"><div class="course-num">02</div><h3 data-i18n="c2_name">Bò Nhúng Dấm</h3><p data-i18n="c2_desc">Thịt bò tươi nhúng nước giấm nóng, cuộn bánh tráng rau sống</p></div>
-    <div class="course-card"><div class="course-num">03</div><h3 data-i18n="c3_name">Bò Nướng Vỉ</h3><p data-i18n="c3_desc">Bò thái mỏng ướp gia vị đặc biệt, nướng vĩ giòn ngon</p></div>
-    <div class="course-card"><div class="course-num">04</div><h3 data-i18n="c4_name">Bò Nướng Mỡ Chài</h3><p data-i18n="c4_desc">Viên bò nướng mỡ chài thơm ngon, giòn bên ngoài mềm bên trong</p></div>
-    <div class="course-card"><div class="course-num">05</div><h3 data-i18n="c5_name">Bò Nướng Lá Lốt</h3><p data-i18n="c5_desc">Thịt bò băm nhuyễn gói lá lốt, nướng thơm lừng</p></div>
-    <div class="course-card"><div class="course-num">06</div><h3 data-i18n="c6_name">Bò Chả Đùm</h3><p data-i18n="c6_desc">Chả bò hấp với nấm và gia vị, phủ hành tây kho ngọt</p></div>
-    <div class="course-card"><div class="course-num">07</div><h3 data-i18n="c7_name">Cháo Bò</h3><p data-i18n="c7_desc">Cháo bò nấu từ xương hầm, kết thúc bữa tiệc ấm lòng</p></div>
+
+    <div class="course-card">
+      <div class="course-badge">01</div>
+      <div class="course-img-wrap">
+        <img class="course-img" src="img/goi-bo-tom.jpeg" alt="Gỏi Bò Tôm" />
+      </div>
+      <div class="course-body">
+        <h3 data-i18n="c1_name">Gỏi Bò Tôm</h3>
+        <div class="course-vn">Shrimp &amp; Beef Salad</div>
+        <p data-i18n="c1_desc">Salad bò tôm đặc trưng Thiên Ân, ăn kèm bánh phồng tôm</p>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-badge">02</div>
+      <div class="course-img-wrap">
+        <img class="course-img" src="img/bo7-1-phan.jpeg" alt="Bò Nhúng Dấm" />
+      </div>
+      <div class="course-body">
+        <h3 data-i18n="c2_name">Bò Nhúng Dấm</h3>
+        <div class="course-vn">Beef Fondue in Vinegar</div>
+        <p data-i18n="c2_desc">Thịt bò tươi nhúng nước giấm nóng, cuộn bánh tráng rau sống</p>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-badge">03</div>
+      <div class="course-img-wrap">
+        <img class="course-img" src="img/bo-nuong-vi.jpeg" alt="Bò Nướng Vỉ" />
+      </div>
+      <div class="course-body">
+        <h3 data-i18n="c3_name">Bò Nướng Vỉ</h3>
+        <div class="course-vn">Grilled Beef on Iron</div>
+        <p data-i18n="c3_desc">Bò thái mỏng ướp gia vị đặc biệt, nướng vỉ giòn ngon</p>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-badge">04</div>
+      <div class="course-img-wrap">
+        <img class="course-img" src="img/bo-mo-chai.jpeg" alt="Bò Nướng Mỡ Chài" />
+      </div>
+      <div class="course-body">
+        <h3 data-i18n="c4_name">Bò Nướng Mỡ Chài</h3>
+        <div class="course-vn">Charbroiled Beef Meatball</div>
+        <p data-i18n="c4_desc">Viên bò nướng mỡ chài thơm ngon, giòn bên ngoài mềm bên trong</p>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-badge">05</div>
+      <div class="course-img-wrap">
+        <img class="course-img" src="img/bo-la-lot.jpeg" alt="Bò Nướng Lá Lốt" />
+      </div>
+      <div class="course-body">
+        <h3 data-i18n="c5_name">Bò Nướng Lá Lốt</h3>
+        <div class="course-vn">Grilled Beef Wrapped in Hawaiian Lot Leaves</div>
+        <p data-i18n="c5_desc">Thịt bò băm nhuyễn gói lá lốt, nướng thơm lừng</p>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-badge">06</div>
+      <div class="course-img-wrap">
+        <img class="course-img" src="img/bo-cha-dum.jpeg" alt="Bò Chả Đùm" />
+      </div>
+      <div class="course-body">
+        <h3 data-i18n="c6_name">Bò Chả Đùm</h3>
+        <div class="course-vn">Steamed Beef Paste</div>
+        <p data-i18n="c6_desc">Chả bò hấp với nấm và gia vị, phủ hành tây kho ngọt</p>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-badge">07</div>
+      <div class="course-img-wrap">
+        <img class="course-img" src="img/chao-bo.jpeg" alt="Cháo Bò" />
+      </div>
+      <div class="course-body">
+        <h3 data-i18n="c7_name">Cháo Bò</h3>
+        <div class="course-vn">Beef Rice Porridge</div>
+        <p data-i18n="c7_desc">Cháo bò nấu từ xương hầm, kết thúc bữa tiệc ấm lòng</p>
+      </div>
+    </div>
+
   </div>
-  <div style="margin-top:48px; text-align:center">
+  <div style="margin-top:52px;text-align:center;position:relative">
     <button class="btn" onclick="openMenu()" data-i18n="see_full_menu">Xem thực đơn đầy đủ →</button>
   </div>
 </section>
@@ -911,7 +1064,7 @@ const T = {
     about_p1: "<strong>Bò 7 Món</strong> is the crown jewel of Southern Vietnamese cuisine — a seven-course beef feast where each dish is prepared using a different technique, from Hawaiian Lot leaf wraps to vinegar fondue.",
     about_p2: "At Thiên Ân, we preserve authentic recipes using fresh ingredients and handcrafted seasonings to bring the taste of home to the heart of California.",
     about_p3: "It's more than a meal — it's an experience of togetherness: wrapping your own rice paper rolls, dipping in fragrant sauces, sharing every moment with family and friends.",
-    courses_label: "Our Specialty", courses_title: "7 Course of Beef",
+    courses_label: "Our Specialty", courses_title: "7 Course of Beef", courses_subtitle: "Seven preparations — one unforgettable feast",
     c1_name:"Shrimp & Beef Salad", c1_desc:"Thiên Ân's signature shrimp & beef salad, served with shrimp chips",
     c2_name:"Beef Fondue", c2_desc:"Fresh beef slices dipped in hot vinegar broth, wrapped in rice paper with fresh herbs",
     c3_name:"Grilled Beef on Iron", c3_desc:"Thinly sliced marinated beef grilled on an iron grill",
@@ -983,7 +1136,7 @@ const T = {
     about_p1:"<strong>Bò 7 Món</strong> là tinh túy của ẩm thực Nam Bộ — một bữa tiệc bảy món bò được chế biến theo bảy cách khác nhau, từ nướng lá lốt đến nhúng giấm, mỗi món mang một hương vị và kết cấu độc đáo.",
     about_p2:"Tại Thiên Ân, chúng tôi giữ nguyên vẹn công thức truyền thống, dùng nguyên liệu tươi ngon và gia vị thủ công để mang đến bữa ăn đậm chất quê hương ngay giữa lòng California.",
     about_p3:"Không chỉ là bữa ăn — đây là trải nghiệm quây quần, cùng tự cuộn bánh tráng, chấm nước chấm thơm ngào ngạt, tận hưởng từng khoảnh khắc bên gia đình và bạn bè.",
-    courses_label:"Đặc sản nổi tiếng", courses_title:"Bảy Món Bò Đặc Trưng",
+    courses_label:"Đặc sản nổi tiếng", courses_title:"Bảy Món Bò Đặc Trưng", courses_subtitle:"Bảy cách chế biến — một bữa tiệc không thể quên",
     c1_name:"Gỏi Bò Tôm", c1_desc:"Salad bò tôm đặc trưng Thiên Ân, ăn kèm bánh phồng tôm",
     c2_name:"Bò Nhúng Dấm", c2_desc:"Thịt bò tươi nhúng nước giấm nóng, cuộn bánh tráng rau sống",
     c3_name:"Bò Nướng Vỉ", c3_desc:"Bò thái mỏng ướp gia vị đặc biệt, nướng vĩ giòn ngon",
@@ -1056,7 +1209,7 @@ const T = {
     about_p1:"<strong>七品牛</strong>是南越美食的瑰宝 — 七道牛肉菜肴以七种不同方式烹制，从假蒟叶牛肉卷到醋火锅，每道菜都有独特的风味与口感。",
     about_p2:"在天安，我们坚持传统配方，使用每日新鲜食材和手工调料，将家乡的味道带到加利福尼亚的中心。",
     about_p3:"这不仅仅是一顿饭 — 而是一种团聚的体验：亲手卷米纸、蘸香浓酱汁，与家人朋友共享每一个美好时刻。",
-    courses_label:"特色名菜", courses_title:"七道特色牛肉",
+    courses_label:"特色名菜", courses_title:"七道特色牛肉", courses_subtitle:"七种烹饪方式 — 一场难忘的盛宴",
     c1_name:"天思鮮蝦牛肉凉拌", c1_desc:"天恩招牌虾牛沙拉，配虾片享用",
     c2_name:"醋鍋牛肉", c2_desc:"新鲜牛肉片涮热醋汤，配米纸和新鲜蔬菜卷食",
     c3_name:"鐵板烤牛肉", c3_desc:"腌制牛肉片薄切，铁板烤制香脆可口",
