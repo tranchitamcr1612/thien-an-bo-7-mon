@@ -344,7 +344,16 @@
     /* ── MAPS ── */
     .maps-iframe { width: 100%; height: 260px; border: 0; border-radius: 6px; margin-top: 24px; filter: grayscale(20%); }
 
-    /* ── RESPONSIVE ── */
+    /* ── ALLERGY TAG ── */
+    .allergy-tag {
+      display: inline-flex; align-items: center; gap: 4px;
+      background: rgba(180,60,60,.15); border: 1px solid rgba(180,60,60,.35);
+      color: #e08080; font-size: .72rem; letter-spacing: .5px;
+      padding: 3px 9px; border-radius: 20px; margin-top: 8px;
+      font-family: 'Lato', sans-serif;
+    }
+
+        /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
       nav { padding: 14px 18px; }
       .nav-links {
@@ -600,7 +609,8 @@
   <p style="margin-top:6px">
     <a href="https://www.yelp.com/biz/thien-an-bo-7-mon-rosemead-2" target="_blank" rel="noopener noreferrer">Yelp</a> &nbsp;|&nbsp;
     <a href="https://www.doordash.com/store/thien-an-bo-7-mon-restuarant-rosemead-878624/" target="_blank" rel="noopener noreferrer">DoorDash</a> &nbsp;|&nbsp;
-    <a href="https://www.grubhub.com/restaurant/thien-an-bo-7-mon-8837-valley-blvd-rosemead/5418984" target="_blank" rel="noopener noreferrer">Grubhub</a>
+    <a href="https://www.grubhub.com/restaurant/thien-an-bo-7-mon-8837-valley-blvd-rosemead/5418984" target="_blank" rel="noopener noreferrer">Grubhub</a> &nbsp;|&nbsp;
+    <a href="https://www.ubereats.com/store/thien-an-bo-7-mon-restaurant/f9qhGtCsR-258gDYirwdOQ" target="_blank" rel="noopener noreferrer">Uber Eats</a>
   </p>
   <p style="margin-top:14px;font-size:.78rem;color:#3d3028">© 2026 Thiên Ân Bò 7 Món · Rosemead, California</p>
 </footer>
@@ -638,7 +648,8 @@
             <div class="menu-item-vn">Shrimp & Beef Salad · 牛虾沙拉</div>
             <div class="menu-item-desc" data-i18n="a1_desc">Salad bò tôm đặc trưng Thiên Ân, ăn kèm bánh phồng tôm.</div>
             <div class="menu-item-price">$17.00</div>
-          </div>
+          
+            <div class="allergy-tag">🥜 Contains Peanuts</div></div>
         </div>
         <div class="menu-item">
           <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;"><span style="font-size:2rem">🥩</span><span style="font-size:.75rem;color:#6a5a48;letter-spacing:1px;text-transform:uppercase">Ảnh sắp có</span></div>
@@ -709,7 +720,8 @@
             <div class="menu-item-vn">Lemongrass Charbroiled Beef · 香茅炭烤牛肉</div>
             <div class="menu-item-desc" data-i18n="s2_desc">Bò nướng sả hành, ăn kèm bánh tráng và rau sống. (Nhỏ: 5 miếng / Lớn: 10 miếng)</div>
             <div class="menu-item-price">$16.00 <span data-i18n="sm_lg">Sm/Lg</span></div>
-          </div>
+          
+            <div class="allergy-tag">🥜 Contains Peanuts</div></div>
         </div>
         <div class="menu-item">
           <img class="menu-item-img" src="img/bo-la-lot.jpeg" alt="Bò Nướng Lá Lốt" />
@@ -718,7 +730,8 @@
             <div class="menu-item-vn">Grilled Beef Wrapped in Hawaiian Lot Leaves · 假蒟叶炭烤牛肉卷</div>
             <div class="menu-item-desc" data-i18n="s3_desc">Bò cuộn lá lốt nướng thơm lừng. (Nhỏ: 5 miếng / Lớn: 10 miếng)</div>
             <div class="menu-item-price">$14.00 <span data-i18n="sm_lg">Sm/Lg</span></div>
-          </div>
+          
+            <div class="allergy-tag">🥜 Contains Peanuts</div></div>
         </div>
         <div class="menu-item">
           <img class="menu-item-img" src="img/bo-mo-chai.jpeg" alt="Bò Nướng Mỡ Chài" />
@@ -727,7 +740,8 @@
             <div class="menu-item-vn">Charbroiled Beef Meatball · 炭烤牛肉丸</div>
             <div class="menu-item-desc" data-i18n="s4_desc">Viên bò nướng mỡ chài thơm ngon. (Nhỏ: 5 miếng / Lớn: 10 miếng)</div>
             <div class="menu-item-price">$14.00 <span data-i18n="sm_lg">Sm/Lg</span></div>
-          </div>
+          
+            <div class="allergy-tag">🥜 Contains Peanuts</div></div>
         </div>
         <div class="menu-item">
           <div class="menu-item-img" style="background:#1a1208;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;"><span style="font-size:2rem">🥩</span><span style="font-size:.75rem;color:#6a5a48;letter-spacing:1px;text-transform:uppercase">Ảnh sắp có</span></div>
@@ -754,7 +768,8 @@
             <div class="menu-item-vn">Steamed Beef Paste · 蒸牛肉饼</div>
             <div class="menu-item-desc" data-i18n="s7_desc">Chả bò hấp với nấm, hạt và gia vị, phủ hành tây kho ngọt. Ăn kèm bánh phồng tôm và nước chấm.</div>
             <div class="menu-item-price">$10.50</div>
-          </div>
+          
+            <div class="allergy-tag">🥜 Contains Peanuts</div></div>
         </div>
         <div class="menu-item">
           <img class="menu-item-img" src="img/chao-bo.jpeg" alt="Cháo Bò" />
@@ -884,7 +899,7 @@
           <div class="bestseller-badge" data-i18n="bestseller">⭐ Best Seller</div>
           <h3>Cá Nướng Da Giòn</h3>
           <div class="sub">Ca Nuong Da Gion · 脆皮烤鲶鱼</div>
-          <p data-i18n="cat_desc">Cá tra nguyên con nướng giòn da, không chiên, không đông lạnh. Nấu theo đơn đặt hàng, rắc hành lá, đậu phộng và ngò gai. Dùng kèm bánh tráng, rau sống, cà rốt, củ cải, giá đỗ, bún và nước chấm tự chọn. <strong style="color:var(--gold)">Gọi trước 30 phút để chuẩn bị!</strong></p>
+          <p data-i18n="cat_desc">Cá tra nguyên con nướng giòn da, không chiên, không đông lạnh. Nấu theo đơn đặt hàng, rắc hành lá và ngò gai. Dùng kèm bánh tráng, rau sống, cà rốt, củ cải, giá đỗ, bún và nước chấm tự chọn. <strong style="color:var(--gold)">Gọi trước 30 phút để chuẩn bị!</strong></p>
           <div class="size-grid">
             <div class="size-row"><span class="size-label" data-i18n="size_s">Nhỏ (Small)</span><span class="size-price">$57</span></div>
             <div class="size-row"><span class="size-label" data-i18n="size_m">Vừa (Medium)</span><span class="size-price">$77</span></div>
@@ -1076,7 +1091,7 @@ const T = {
     hl_label: "Why Choose Us", hl_title: "What Makes Us Special",
     hl1_title:"Fresh Ingredients", hl1_desc:"Hand-selected beef daily, fresh produce, traditional spices — no additives",
     hl2_title:"Warm Atmosphere", hl2_desc:"Perfect for families, groups, and celebrations — with private parking",
-    hl3_title:"Delivery Available", hl3_desc:"Order via DoorDash, Grubhub, or call us directly",
+    hl3_title:"Delivery Available", hl3_desc:"Order via DoorDash, Grubhub, Uber Eats, or call us directly",
     hl4_title:"Beer & Wine", hl4_desc:"A curated drinks menu to pair with your grilled beef experience",
     gallery_label:"Gallery", gallery_title:"Moments at Thiên Ân",
     info_hours:"Hours", info_contact:"Contact & Location",
@@ -1109,7 +1124,7 @@ const T = {
     sm_lg:"Sm/Lg", price_ask:"Ask server",
     cat_title:"Thiên Ân Baked Catfish", cat_sub:"Signature Dish · 招牌烤鲶鱼",
     bestseller:"⭐ Best Seller",
-    cat_desc:'Our famous whole catfish, baked to perfection — never fried or frozen. Cooked to order, garnished with green onions, peanuts, and cilantro. Served with rice paper, fresh greens, cucumber, radish, carrots, bean sprouts, vermicelli and your choice of sauce. <strong style="color:var(--gold)">Call 30 min ahead to order!</strong>',
+    cat_desc:'Our famous whole catfish, baked to perfection — never fried or frozen. Cooked to order, garnished with green onions and cilantro. Served with rice paper, fresh greens, cucumber, radish, carrots, bean sprouts, vermicelli and your choice of sauce. <strong style="color:var(--gold)">Call 30 min ahead to order!</strong>',
     size_s:"Small", size_m:"Medium", size_l:"Large", size_xl:"Extra Large (XL)",
     bo7_title:"7 Course of Beef", bo7_sub:"Bò 7 Món · 七品牛肉盛宴",
     bo7_intro_title:"The Ultimate Beef Experience",
@@ -1148,7 +1163,7 @@ const T = {
     hl_label:"Tại sao chọn chúng tôi", hl_title:"Điểm Nổi Bật",
     hl1_title:"Nguyên liệu tươi ngon", hl1_desc:"Thịt bò chọn lọc mỗi ngày, rau sống sạch, gia vị truyền thống không phụ gia",
     hl2_title:"Không gian ấm cúng", hl2_desc:"Phù hợp cho gia đình, nhóm bạn, tiệc sinh nhật — chỗ đậu xe riêng tiện lợi",
-    hl3_title:"Giao hàng tận nơi", hl3_desc:"Đặt qua DoorDash, Grubhub hoặc gọi trực tiếp — mang hương vị Thiên Ân về nhà",
+    hl3_title:"Giao hàng tận nơi", hl3_desc:"Đặt qua DoorDash, Grubhub, Uber Eats hoặc gọi trực tiếp — mang hương vị Thiên Ân về nhà",
     hl4_title:"Bia & Rượu vang", hl4_desc:"Thực đơn đồ uống đa dạng, hoàn hảo để kết hợp cùng bò nướng",
     gallery_label:"Hình ảnh", gallery_title:"Khoảnh Khắc Tại Thiên Ân",
     info_hours:"Giờ Mở Cửa", info_contact:"Liên Hệ & Địa Chỉ",
@@ -1182,7 +1197,7 @@ const T = {
     sm_lg:"Nhỏ/Lớn", price_ask:"Hỏi nhân viên",
     cat_title:"Cá Nướng Thiên Ân", cat_sub:"Món đặc trưng · 招牌烤鲶鱼",
     bestseller:"⭐ Bán Chạy Nhất",
-    cat_desc:'Cá tra nguyên con nướng giòn da, không chiên, không đông lạnh. Nấu theo đơn đặt hàng, rắc hành lá, đậu phộng và ngò gai. Dùng kèm bánh tráng, rau sống, cà rốt, củ cải, giá đỗ, bún và nước chấm tự chọn. <strong style="color:var(--gold)">Gọi trước 30 phút để chuẩn bị!</strong>',
+    cat_desc:'Cá tra nguyên con nướng giòn da, không chiên, không đông lạnh. Nấu theo đơn đặt hàng, rắc hành lá và ngò gai. Dùng kèm bánh tráng, rau sống, cà rốt, củ cải, giá đỗ, bún và nước chấm tự chọn. <strong style="color:var(--gold)">Gọi trước 30 phút để chuẩn bị!</strong>',
     size_s:"Nhỏ (Small)", size_m:"Vừa (Medium)", size_l:"Lớn (Large)", size_xl:"Extra Lớn (XL)",
     bo7_title:"Bò 7 Món", bo7_sub:"7 Course of Beef · 七品牛肉盛宴",
     bo7_intro_title:"Bữa Tiệc Bò Đặc Sắc",
@@ -1221,7 +1236,7 @@ const T = {
     hl_label:"为什么选择我们", hl_title:"我们的特色",
     hl1_title:"新鲜食材", hl1_desc:"每日精选牛肉，新鲜蔬菜，传统调料，不含添加剂",
     hl2_title:"温馨环境", hl2_desc:"适合家庭、团体、生日聚会 — 配有专属停车场",
-    hl3_title:"外卖配送", hl3_desc:"通过DoorDash、Grubhub点餐，或直接致电",
+    hl3_title:"外卖配送", hl3_desc:"通过DoorDash、Grubhub、Uber Eats点餐，或直接致电",
     hl4_title:"啤酒与葡萄酒", hl4_desc:"丰富的饮品菜单，完美搭配炭烤牛肉体验",
     gallery_label:"图片", gallery_title:"天安的精彩瞬间",
     info_hours:"营业时间", info_contact:"联系方式与地址",
