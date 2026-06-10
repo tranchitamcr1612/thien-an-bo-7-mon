@@ -379,7 +379,41 @@
       .sticky-call { display: block; }
       .maps-iframe { height: 200px; }
     }
-  </style>
+  
+  /* ── REVIEWS ── */
+  .reviews { background: var(--cream); padding: 80px 20px; text-align: center; }
+  .reviews .section-label { color: var(--red); }
+  .reviews .section-title { color: var(--dark); }
+  .rating-badges { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin: 40px 0; }
+  .rating-badge {
+    display: flex; align-items: center; gap: 14px;
+    background: #fff; border: 1px solid rgba(155,28,28,.15);
+    border-radius: 14px; padding: 18px 28px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.07);
+    text-decoration: none; color: inherit;
+    transition: transform .2s, box-shadow .2s;
+  }
+  .rating-badge:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,.12); }
+  .rating-badge-logo { font-size: 1.9rem; line-height: 1; }
+  .rating-badge-info { text-align: left; }
+  .rating-badge-score { font-family: "Playfair Display", serif; font-size: 1.8rem; font-weight: 700; color: var(--dark); line-height: 1; }
+  .rating-badge-stars { color: #f5a623; font-size: .95rem; letter-spacing: 1px; }
+  .rating-badge-source { font-size: .75rem; color: var(--gray); margin-top: 2px; }
+  .review-cards { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; max-width: 1100px; margin: 0 auto; }
+  .review-card {
+    background: #fff; border-radius: 14px; padding: 28px;
+    width: calc(33.33% - 14px); min-width: 270px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.07);
+    border: 1px solid rgba(155,28,28,.1);
+    text-align: left; display: flex; flex-direction: column; gap: 12px;
+  }
+  .review-stars { color: #f5a623; font-size: 1rem; }
+  .review-text { font-size: .92rem; line-height: 1.7; color: #3a2e24; flex: 1; }
+  .review-text::before { content: "C"; font-size: 1.4rem; color: var(--red); font-family: "Playfair Display", serif; line-height: 0; vertical-align: -6px; margin-right: 2px; }
+  .review-author { font-size: .8rem; color: var(--gray); font-weight: 600; }
+  .review-source { font-size: .72rem; color: #aaa; }
+  @media(max-width:700px) { .review-card { width: 100%; } .rating-badge { width: 100%; justify-content: center; } }
+</style>
 </head>
 <body>
 
@@ -600,6 +634,88 @@
   <h2 data-i18n="cta_title">Đặt Bàn Ngay Hôm Nay</h2>
   <p data-i18n="cta_sub">Thưởng thức bữa tiệc bò 7 món cùng gia đình và bạn bè. Hương vị Sài Gòn giữa lòng California.</p>
   <a href="tel:6262866665" class="btn">(626) 286-6665</a>
+</section>
+
+
+<!-- ═══════════ REVIEWS ═══════════ -->
+<section class="reviews">
+  <div class="section-label" data-i18n="reviews_label">What Guests Say</div>
+  <h2 class="section-title" data-i18n="reviews_title">Loved by Our Guests</h2>
+
+  <!-- Rating badges -->
+  <div class="rating-badges">
+    <a class="rating-badge" href="https://www.yelp.com/biz/thien-an-bo-7-mon-rosemead-2" target="_blank" rel="noopener">
+      <div class="rating-badge-logo">🟥</div>
+      <div class="rating-badge-info">
+        <div class="rating-badge-score">778+</div>
+        <div class="rating-badge-stars">★★★★</div>
+        <div class="rating-badge-source">Reviews on Yelp</div>
+      </div>
+    </a>
+    <a class="rating-badge" href="https://maps.google.com/?q=Thien+An+Bo+7+Mon+Rosemead" target="_blank" rel="noopener">
+      <div class="rating-badge-logo">🔵</div>
+      <div class="rating-badge-info">
+        <div class="rating-badge-score">4.2 / 5</div>
+        <div class="rating-badge-stars">★★★★</div>
+        <div class="rating-badge-source">Google Reviews</div>
+      </div>
+    </a>
+    <a class="rating-badge" href="https://www.tripadvisor.com/Restaurant_Review-g32987-d4687691-Reviews-Thien_An-Rosemead_California.html" target="_blank" rel="noopener">
+      <div class="rating-badge-logo">🟢</div>
+      <div class="rating-badge-info">
+        <div class="rating-badge-score">4.6 / 5</div>
+        <div class="rating-badge-stars">★★★★★</div>
+        <div class="rating-badge-source">Tripadvisor · #19 of 131 in Rosemead</div>
+      </div>
+    </a>
+  </div>
+
+  <!-- Review cards -->
+  <div class="review-cards">
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">Excellent service, fast and friendly. The seven dishes of beef are tasty with plenty of vegetables, herbs and pickles to make rolls. The catfish is well prepared with crispy skin and moist meat.</div>
+      <div class="review-author">Tuyet Hong H. — Monterey Park, CA</div>
+      <div class="review-source">via Tripadvisor</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">If you love beef, this is the place for it! 7 courses of beef cooked differently. This place is authentic! I love how all the vegetables are provided — no skimping! And rice papers, too!</div>
+      <div class="review-author">Yelp Reviewer</div>
+      <div class="review-source">via Yelp</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">Their 7 Style Beef is the best I've had. Beef slices arrive and you cook them on the grill at the table. There's also meatballs, beef wrapped in lá lốt leaves — a truly great meal.</div>
+      <div class="review-author">Jing K. — Los Angeles, CA</div>
+      <div class="review-source">via Tripadvisor</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-text">Their most famous dish is the broiled whole catfish. Meat is soft and skin is crispy. Highly recommended — 80% of every table orders this dish. We also loved the grilled beef in lemongrass.</div>
+      <div class="review-author">Hongkongboy55 — Richmond, Canada</div>
+      <div class="review-source">via Tripadvisor</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★</div>
+      <div class="review-text">This is our go-to restaurant to take visitors and family from out of state. The catfish is served on a platter with fresh vegetables, dipping sauces, and rice wrappers — an experience unlike any other.</div>
+      <div class="review-author">Sonnymao — Brea, CA</div>
+      <div class="review-source">via Tripadvisor</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★</div>
+      <div class="review-text">Very popular with locals. The food is well cooked with good ingredients — the fried catfish was a standout and the soup was a highlight. Great for groups and family celebrations.</div>
+      <div class="review-author">TracCao — Melbourne, Australia</div>
+      <div class="review-source">via Tripadvisor</div>
+    </div>
+
+  </div>
 </section>
 
 <!-- ═══════════ FOOTER ═══════════ -->
@@ -1209,7 +1325,7 @@ const T = {
     cta_title:"Reserve Your Table Today",
     cta_sub:"Enjoy a 7 course of beef with family and friends. The taste of Saigon, right here in California.",
     modal_title:"Our Menu",
-    tab_appetizers:"Appetizers", tab_sides:"Side Orders", tab_grilled:"Grilled / Fondue", tab_hotpot:"Hotpot", tab_catfish:"Catfish ⭐", tab_bo7:"7 Course of Beef", tab_drinks:"Beverages", tab_addons:"Add-ons", tab_ricenoodle:"Rice & Noodle", ricenoodle_title:"Rice & Noodle", ricenoodle_sub:"Cơm & Bún · 米饭&粉面", drinks_title:"Beverages", addons_title:"Add-on Orders", addons_sub:"Gọi Thêm · 加点", drinks_sub:"Giải Khát · 饮料", grilled_title:"Grilled &amp; Fondue Courses", grilled_sub:"Món Nướng Vỉ / Nhúng Dấm · 铁板烧/火锅", hotpot_title:"Hotpot", hotpot_sub:"Vietnamese Hotpot · 越式火锅",
+    tab_appetizers:"Appetizers", tab_sides:"Side Orders", tab_grilled:"Grilled / Fondue", tab_hotpot:"Hotpot", tab_catfish:"Catfish ⭐", tab_bo7:"7 Course of Beef", tab_drinks:"Beverages", tab_addons:"Add-ons", tab_ricenoodle:"Rice & Noodle", reviews_label:"What Guests Say", reviews_title:"Loved by Our Guests", ricenoodle_title:"Rice & Noodle", ricenoodle_sub:"Cơm & Bún · 米饭&粉面", drinks_title:"Beverages", addons_title:"Add-on Orders", addons_sub:"Gọi Thêm · 加点", drinks_sub:"Giải Khát · 饮料", grilled_title:"Grilled &amp; Fondue Courses", grilled_sub:"Món Nướng Vỉ / Nhúng Dấm · 铁板烧/火锅", hotpot_title:"Hotpot", hotpot_sub:"Vietnamese Hotpot · 越式火锅",
     app_title:"Appetizers", app_sub:"Khai Vị · 开胃菜",
     a1_desc:"Thiên Ân's signature shrimp & beef salad, served with shrimp chips.",
     a2_desc:"Fresh beef salad with anchovy dipping sauce and fresh-cut chilies.",
@@ -1279,7 +1395,7 @@ const T = {
     cta_title:"Đặt Bàn Ngay Hôm Nay",
     cta_sub:"Thưởng thức bữa tiệc bò 7 món cùng gia đình và bạn bè. Hương vị Sài Gòn giữa lòng California.",
     modal_title:"Thực Đơn",
-    tab_appetizers:"Khai Vị", tab_sides:"Món Riêng", tab_grilled:"Nướng Vỉ / Nhúng Dấm", tab_hotpot:"Lẩu / Hotpot", tab_catfish:"Cá Thiên Ân ⭐", tab_bo7:"Bò 7 Món", tab_drinks:"Giải Khát", tab_addons:"Gọi Thêm", tab_ricenoodle:"Cơm & Bún", ricenoodle_title:"Cơm & Bún", ricenoodle_sub:"Rice & Noodle · 米饭&粉面", drinks_title:"Giải Khát", addons_title:"Gọi Thêm", addons_sub:"Add-on Orders · 加点", drinks_sub:"Beverages · 饮料", grilled_title:"Món Nướng Vỉ / Nhúng Dấm", grilled_sub:"Grilled &amp; Fondue Courses · 铁板烧/火锅", hotpot_title:"Lẩu / Hotpot", hotpot_sub:"Lẩu Việt Nam · 越式火锅",
+    tab_appetizers:"Khai Vị", tab_sides:"Món Riêng", tab_grilled:"Nướng Vỉ / Nhúng Dấm", tab_hotpot:"Lẩu / Hotpot", tab_catfish:"Cá Thiên Ân ⭐", tab_bo7:"Bò 7 Món", tab_drinks:"Giải Khát", tab_addons:"Gọi Thêm", tab_ricenoodle:"Cơm & Bún", reviews_label:"Khách Hàng Nói Gì", reviews_title:"Được Yêu Thích", ricenoodle_title:"Cơm & Bún", ricenoodle_sub:"Rice & Noodle · 米饭&粉面", drinks_title:"Giải Khát", addons_title:"Gọi Thêm", addons_sub:"Add-on Orders · 加点", drinks_sub:"Beverages · 饮料", grilled_title:"Món Nướng Vỉ / Nhúng Dấm", grilled_sub:"Grilled &amp; Fondue Courses · 铁板烧/火锅", hotpot_title:"Lẩu / Hotpot", hotpot_sub:"Lẩu Việt Nam · 越式火锅",
     app_title:"Khai Vị", app_sub:"Appetizers · 开胃菜",
     a1_desc:"Salad bò tôm đặc trưng Thiên Ân, ăn kèm bánh phồng tôm.",
     a2_desc:"Gỏi bò tươi với nước mắm cá cơm và ớt tươi.",
@@ -1350,7 +1466,7 @@ const T = {
     cta_title:"立即预订餐桌",
     cta_sub:"与家人朋友共享七品牛肉盛宴。加州的西贡味道。",
     modal_title:"菜单",
-    tab_appetizers:"开胃菜", tab_sides:"单点菜品", tab_grilled:"铁板烧/火锅", tab_hotpot:"越式火锅", tab_catfish:"招牌烤鲶鱼 ⭐", tab_bo7:"七品牛肉", tab_drinks:"饮料", tab_addons:"加点", tab_ricenoodle:"米饭&粉面", ricenoodle_title:"米饭 & 粉面", ricenoodle_sub:"Cơm & Bún · Rice & Noodle", drinks_title:"饮料", addons_title:"加点", addons_sub:"Gọi Thêm · Add-on Orders", drinks_sub:"Beverages · Giải Khát", grilled_title:"铁板烧 / 火锅", grilled_sub:"Nướng Vỉ / Nhúng Dấm · Grilled &amp; Fondue", hotpot_title:"越式火锅", hotpot_sub:"Vietnamese Hotpot · Lẩu Việt Nam",
+    tab_appetizers:"开胃菜", tab_sides:"单点菜品", tab_grilled:"铁板烧/火锅", tab_hotpot:"越式火锅", tab_catfish:"招牌烤鲶鱼 ⭐", tab_bo7:"七品牛肉", tab_drinks:"饮料", tab_addons:"加点", tab_ricenoodle:"米饭&粉面", reviews_label:"顾客评价", reviews_title:"深受顾客喜爱", ricenoodle_title:"米饭 & 粉面", ricenoodle_sub:"Cơm & Bún · Rice & Noodle", drinks_title:"饮料", addons_title:"加点", addons_sub:"Gọi Thêm · Add-on Orders", drinks_sub:"Beverages · Giải Khát", grilled_title:"铁板烧 / 火锅", grilled_sub:"Nướng Vỉ / Nhúng Dấm · Grilled &amp; Fondue", hotpot_title:"越式火锅", hotpot_sub:"Vietnamese Hotpot · Lẩu Việt Nam",
     app_title:"开胃菜", app_sub:"Khai Vị · Appetizers",
     a1_desc:"天安招牌虾牛沙拉，配虾片享用。",
     a2_desc:"新鲜牛肉沙拉配鳀鱼蘸酱和新鲜辣椒。",
